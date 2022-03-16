@@ -1,0 +1,28 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: rgba(218, 226, 228, 0.25);
+}
+
+h2 {
+  width: 95%;
+  background-color: rgba(218, 226, 228, 0.25);
+  border: solid 1px black;
+  padding: 5px;
+  margin: 10px auto;
+  cursor: pointer;
+}
+
+#arrow {
+  cursor: pointer;
+  border: solid 1px black;
+  width: 1px;
+  height: 1px;
+  border-color: black rgba(218, 226, 228, 0) rgba(218, 226, 228, 0)
+    rgba(218, 226, 228, 0);
+  border-width: 10px;
+  display: inline;
+  float: inline-end;
+  margin-top: 5px;
+}
