@@ -12,16 +12,33 @@
       <h1>A propos de nous</h1>
     </head>
 
-    <p id="aboutUsIntro">Ce petit site a été réalisé pour notre premier projet à la Wild Code School. Après deux semaines de formation initinale, et durant 2 semaines du 14/03/2022 
-        au 25/03/2022, notre équipe de 5 a tout d'abord réalisé un maquettage papier. Puis un prototypage sur Figma. ENSUITE A REDIGER  : GITHUB, Travail en équipe...
+    <p id="aboutUsIntro">
+      Ce petit site a été réalisé pour notre premier projet à la Wild Code
+      School. Après deux semaines de formation initinale, et durant 2 semaines
+      du 14/03/2022 au 25/03/2022, notre équipe de 5 a tout d'abord réalisé un
+      maquettage papier. Puis un prototypage sur Figma. ENSUITE A REDIGER :
+      GITHUB, Travail en équipe...
     </p>
-    <div id="contactUs">
+      <h2>Contactez-nous</h2>
 
+<!-- JAVASCRIPT A FAIRE pour récupérer les données du formulaire-->
+      <div id="aboutUscontact">
+        <form id="contactFormAboutus">
+          <label for="name">Your name:</label><br />
+          <input type="text" id="name" name="name" value="John" /><br />
+          <label for="email">Email:</label><br />
+          <input
+            type="email"
+            id="email"
+            name="email"
+            value="example@seamail.com"
+          /><br />
+          <label for="message">Message:</label><br />
+          <textarea id="message" name="message"></textarea>
+          <br /><br />
+          <input type="submit" value="Envoyer !" />
+        </form>
     </div>
-    <div id="theTeam">
-
-    </div>
-
-
+    <div id="theTeam"></div>
   </body>
 </html>
