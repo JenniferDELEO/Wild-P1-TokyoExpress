@@ -6,45 +6,77 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homepage</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="accueil.css">
+    
+
 </head>
 
 <body>
 
     <header>
         <h1>TOKYO EXPRESS</h1>
-        <img src="assets/photo-accueil.jpeg" alt="photo-accueil-montagne">
+
     </header>
+
+    <div class="imgcenter">
+        <img class="imgparallax" src="assets/photo-accueil.jpeg" alt="photo-accueil-montagne">
+    </div>
 
 
     <main>
-        <section>
+        <section class="texte-presentation">
             <p>Lorem ipsum dolor sit amet consectetur la patate giboulet fru kesajdo. Lorem ipsum dolor, sit amet
                 consectetur adipisicing elit. Voluptates iste animi explicabo non. Quisquam, distinctio vel non quidem
                 voluptatum maxime quibusdam, dolorum minima neque rem aut beatae culpa perspiciatis placeat.</p>
         </section>
 
-        <section>
-            <h2></h2>
+        <section class="imgarticle">
+            <h2>Divers</h2>
             <article>
-                <h1>Article 1</h1>
+                <img class="imgpresentation1" src="assets/Photo hotel 1.jpg" alt="photo-hotel">
             </article>
             <article>
-                <h1>Article 2</h1>
+                <img class="imgpresentation1" src="assets/Photo Restaurant 2.jpg" alt="photo-restaurant">
             </article>
             <article>
-                <h1>Article 3</h1>
-            </article>
-            <article>
-                <h1>Article 4</h1>
+                <img class="imgpresentation1" src="assets/Lieu 1.jpeg" alt="photo-lieu-cerisier">
             </article>
         </section>
     </main>
 
     <footer>
-        copyriiiight
+        <div class="logofooter">
+            <div class="reseaux">
+                <img class="insta" src="assets/insta blanc.png" alt="logo insta">
+                <img class="twitter" src="assets/twitter blanc.png" alt="logo twitter">
+                <img class="github" src="assets/github blanc.png" alt="logo github">
+                <img class="fb" src="assets/fb blanc.png" alt="logo facebook">
+                <img class="linkedin" src="assets/linkedin blanc.png" alt="logo linkedin">
+            </div>
+            <div class="arrowjapan">
+                <img class="arrow" src="assets/fleche.png" alt="fleche">
+                <img class="logojapan" src="assets/logojapan.png" alt="logo japan">
+            </div>
+        </div>
+
+        <div class="categoriefooter">
+            <div class="accueilfooter">Accueil</div>
+            <div class="preparationfooter">Préparation au voyage</div>
+            <div class="adressesfooter">Adresses</div>
+            <div class="aproposfooter">A propos</div>
+        </div>
+
+
+        <div class="copyrightfooter">
+            <img class="copyright" src="assets/copyrigh.png" alt="copyright">
+            <p>2022 Tokyo Express. Tous droits réservés</p>
+        </div>
     </footer>
 
+   
+    <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.5.1/dist/simpleParallax.min.js"></script>
+    <script src="homepage.js"></script>
 </body>
 
 </html>
