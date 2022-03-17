@@ -1,0 +1,22 @@
+.photo-lieu1 {
+    width: 100%;
+    padding: 0;
+}
+
+.content {
+    background-color: #A9C3D6;
+
+}
+
+.commentaire {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    margin: 20px;
+}
+
+textarea {
+    height: 100px;
+    margin: 20px;
+  width: 90%;
+
+}
