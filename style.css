@@ -11,12 +11,12 @@
 
 h1 {
     font-family: "chinchan";
-    font-weight: 500;
     font-size: 24px;
     text-align: center;
     color: #7D191B;
     padding: 20px 20px;
     margin: 20px 40px;
+    font-weight: bold;
 }
 
 body {
@@ -28,9 +28,10 @@ body {
     color: #2C2C2E;
 }
 
-.corpstexte {
+.corpstexte, .corpstexte2, .menuResto {
     padding: 10px 10px;
 }
+
 
 footer {
     width: 100%;
