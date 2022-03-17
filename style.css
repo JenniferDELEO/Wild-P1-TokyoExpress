@@ -11,12 +11,12 @@
 
 h1 {
     font-family: "chinchan";
-    font-weight: 500;
     font-size: 24px;
     text-align: center;
     color: #7D191B;
     padding: 20px 20px;
     margin: 20px 40px;
+    font-weight: 900;
 }
 
 body {
@@ -105,3 +105,4 @@ footer {
 .categoriefooter {
     margin: 8px;
 }
+
