@@ -1,14 +1,21 @@
 body {
-    margin: 0;
+    background-color: #DAE2E4;
 }
 
 header {
-    display: flex;
-    justify-content: center;
     text-align: center;
 }
+main {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 
-h1{
-    line-height: 250px;
 }
-   
+
+
+section p {
+    width: 330px;
+    border: solid black;
+}
+
