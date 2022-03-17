@@ -45,3 +45,15 @@ h3 {
 p {
   padding: 5px;
 }
+
+#hostel1 {
+  display: flex;
+  align-items: center;
+}
+
+#hostel3-photo {
+  flex: 2;
+}
+#hostel3Text {
+  flex: 1;
+}
