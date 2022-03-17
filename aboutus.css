@@ -1,0 +1,42 @@
+#aboutUsh1{
+}
+
+#aboutUsIntro{
+    border-radius: 10px;
+}
+
+h2{
+    font-size: 1.2em;
+}
+
+#aboutUsCards{
+    display: flex;
+}
+
+.card{
+    position: relative;
+    width:150px;
+    height: 168px;
+    margin: 10px;
+}
+
+.polaroidFrame{
+    position: absolute;
+    width:100%;
+}
+
+.profilePic{
+    position: absolute;
+    width: 85%;
+    height:76%;
+    z-index: 1;
+    margin-left:11px;
+    margin-top:11px;
+}
+
+.cardName{
+    position: absolute;
+    margin-top:140px;
+    margin-left:55px;
+}
+

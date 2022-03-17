@@ -9,71 +9,116 @@
     <link href="aboutus.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
+    <!-- HEADER  -->
+      <h1 id="aboutUsh1">A propos de nous</h1>
 
-    <!-- HEADER  à intégrer -->
-    <head>
-      <h1>A propos de nous</h1>
-    </head>
-
-    <p id="aboutUsIntro">
-      Ce petit site a été réalisé pour notre premier projet à la Wild Code
-      School. Après deux semaines de formation initinale, et durant 2 semaines
-      du 14/03/2022 au 25/03/2022, notre équipe de 5 a tout d'abord réalisé un
-      maquettage papier. Puis un prototypage sur Figma. ENSUITE A REDIGER :
-      GITHUB, Travail en équipe...
-    </p>
-      <h2>Contactez-nous</h2>
-
-<!-- JAVASCRIPT A FAIRE pour récupérer les données du formulaire-->
-      <div id="aboutUscontact">
-        <form id="contactFormAboutus">
-          <label for="name">Your name:</label><br />
-          <input type="text" id="name" name="name" value="John" /><br />
-          <label for="email">Email:</label><br />
-          <input
-            type="email"
-            id="email"
-            name="email"
-            value="example@seamail.com"
-          /><br />
-          <label for="message">Message:</label><br />
-          <textarea id="message" name="message"></textarea>
-          <br /><br />
-          <input type="submit" value="Envoyer !" />
-        </form>
+    <div id="aboutUsIntro">
+      <p>
+        Ce petit site a été réalisé pour notre premier projet à la Wild Code
+        School. Après deux semaines de formation initiale, et durant 2 semaines
+        du 14/03/2022 au 25/03/2022, notre équipe de 5 a :<br />
+        - tout d'abord réalisé un maquettage papier<br />
+        - puis un prototypage sur Figma<br />
+        - ENSUITE A REDIGER : GITHUB, Travail en équipe...
+      </p>
     </div>
-    <div id="theTeam"></div>
 
-<!-- Footer copied from listpage.html , if modified from listpage.html : take it again there -->
+    <div id="aboutUscontact">
+      <!-- JAVASCRIPT A FAIRE pour récupérer les données du formulaire-->
+      <h2>Contactez-nous</h2>
+      <form id="contactFormAboutus">
+        <label for="name">Votre nom :</label><br />
+        <input type="text" id="name" name="name" value="Votre nom" /><br />
+        <label for="email">Email:</label><br />
+        <input
+          type="email"
+          id="email"
+          name="email"  
+          value="votre@email.com"
+        /><br />
+        <label for="message">Message:</label><br />
+        <textarea id="message" name="message"></textarea>
+        <br /><br />
+        <input type="submit" value="Envoyer !" />
+      </form>
+    </div>
+
+
+    <div id="theTeam">
+        <h2>L'équipe</h2>
+
+        <div id="aboutUsCards">
+            <div class="card">
+                <img class="polaroidFrame" src="./assets/aboutUs_PolaroidBackGround.png" alt="Polaroid frame"/>
+                <img class="profilePic" src="./assets/aboutUs_Anna.jpg" alt="Anna's Picture"/>
+                <p class="cardName"> Anna</p>
+            </div>   
+            
+            <div class="card">
+                <img class="polaroidFrame" src="./assets/aboutUs_PolaroidBackGround.png" alt="Polaroid frame"/>
+                <img class="profilePic" src="./assets/aboutUs_Claire.jpg" alt="Claire's Picture"/>
+                <p class="cardName"> Claire</p>
+            </div>  
+
+            <div class="card">
+                <img class="polaroidFrame" src="./assets/aboutUs_PolaroidBackGround.png" alt="Polaroid frame"/>
+                <img class="profilePic" src="./assets/aboutUs_Jen.jpg" alt="Jennifer's Picture"/>
+                <p class="cardName"> Jennifer</p>
+            </div>  
+
+            <div class="card">
+                <img class="polaroidFrame" src="./assets/aboutUs_PolaroidBackGround.png" alt="Polaroid frame"/>
+                <img class="profilePic" src="./assets/aboutUs_Leo.jpg" alt="Leo's Picture"/>
+                <p class="cardName"> Léo</p>
+            </div>  
+
+            <div class="card">
+                <img class="polaroidFrame" src="./assets/aboutUs_PolaroidBackGround.png" alt="Polaroid frame"/>
+                <img class="profilePic" src="./assets/aboutUs_Gaspard.jpg" alt="Gaspard's Picture"/>
+                <p class="cardName"> Gaspard</p>
+            </div>  
+
+        </div>
+        
+
+    </div>
+     
+
     <footer>
-        <div class="logofooter">
-          <div class="reseaux">        
-            <img class="insta" src="assets/insta blanc.png" alt="logo insta">
-            <img class="twitter" src="assets/twitter blanc.png" alt="logo twitter">
-            <img class="github" src="assets/github blanc.png" alt="logo github">
-            <img class="fb" src="assets/fb blanc.png" alt="logo facebook">
-            <img class="linkedin" src="assets/linkedin blanc.png" alt="logo linkedin">
+          <!-- Footer copied from listpage.html , if modified from listpage.html : take it again there -->
+      <div class="logofooter">
+        <div class="reseaux">
+          <img class="insta" src="assets/insta blanc.png" alt="logo insta" />
+          <img
+            class="twitter"
+            src="assets/twitter blanc.png"
+            alt="logo twitter"
+          />
+          <img class="github" src="assets/github blanc.png" alt="logo github" />
+          <img class="fb" src="assets/fb blanc.png" alt="logo facebook" />
+          <img
+            class="linkedin"
+            src="assets/linkedin blanc.png"
+            alt="logo linkedin"
+          />
         </div>
         <div class="arrowjapan">
-            <img class="arrow" src="assets/fleche.png" alt="fleche">
-            <img class="logojapan" src="assets/logojapan.png" alt="logo japan">
+          <img class="arrow" src="assets/fleche.png" alt="fleche" />
+          <img class="logojapan" src="assets/logojapan.png" alt="logo japan" />
         </div>
-        </div>
-    
-     <div class="categoriefooter">
-      <div class="accueilfooter">Accueil</div>
-      <div class="preparationfooter">Préparation au voyage</div>
-      <div class="adressesfooter">Adresses</div>
-      <div class="aproposfooter">A propos</div>
-     </div>
-    
-    
-          <div class="copyrightfooter">      
-            <img class="copyright" src="assets/copyrigh.png" alt="copyright">
-            <p>2022 Tokyo Express. Tous droits réservés</p>
-          </div>
+      </div>
+
+      <div class="categoriefooter">
+        <div class="accueilfooter">Accueil</div>
+        <div class="preparationfooter">Préparation au voyage</div>
+        <div class="adressesfooter">Adresses</div>
+        <div class="aproposfooter">A propos</div>
+      </div>
+
+      <div class="copyrightfooter">
+        <img class="copyright" src="assets/copyrigh.png" alt="copyright" />
+        <p>2022 Tokyo Express. Tous droits réservés</p>
+      </div>
     </footer>
-
-
   </body>
 </html>
