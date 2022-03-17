@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="listspage.css" />
     <title>Bonnes adresses</title>
   </head>
@@ -57,15 +58,16 @@
       <button id="arrow"></button>
     </h2>
     <div id="hostel">
-      <div id="hostel1">
-        <img
-          src="./assets/Photo hotel 1.jpg"
-          alt="Photo Hotel Sunroute Plaza Shinjuku"
-          id="hostel1-photo"
-          width="100%"
-        />
-        <div id="hostel1Text">
-          <h3>Hotel Sunroute Plaza Shinjuku</h3>
+      <h3>Hotel Sunroute Plaza Shinjuku</h3>
+      <div class="hostel">
+        <div class="hostel-photo">
+          <img
+            src="./assets/Photo hotel 1.jpg"
+            alt="Photo Hotel Sunroute Plaza Shinjuku"
+            id="hostel1-photo"
+          />
+        </div>
+        <div class="hostel-text">
           <p>Hôtel à Tokyo (Arrondissement de Shibuya)</p>
           <p>
             Situé dans le centre de Shinjuku, à seulement 4 minutes à pied de la
@@ -74,15 +76,17 @@
           </p>
         </div>
       </div>
-      <div id="hostel2">
-        <img
-          src="./assets/Photo hotel 2.jpeg"
-          alt="Photo de The Royal Park Hotel Tokyo Haneda"
-          id="hostel2-photo"
-          width="100%"
-        />
-        <div id="hostel2Text">
-          <h3>The Royal Park Hotel Tokyo Haneda</h3>
+      <h3>The Royal Park Hotel Tokyo Haneda</h3>
+      <div class="hostel">
+        <div class="hostel-photo">
+          <img
+            src="./assets/Photo hotel 2.jpeg"
+            alt="Photo de The Royal Park Hotel Tokyo Haneda"
+            id="hostel2-photo"
+            width="100%"
+          />
+        </div>
+        <div class="hostel-text" id="hostel2-text">
           <p>Hôtel à Tokyo (Arrondissement d'Ōta)</p>
           <p>
             Avec son hall situé à côté de l'aéroport Haneda, The Royal Park
@@ -91,15 +95,17 @@
           </p>
         </div>
       </div>
-      <div id="hostel3">
-        <img
-          src="./assets/Photo hotel 3.jpeg"
-          alt="Photo de The Tokyo Station Hotel"
-          id="hostel3-photo"
-          width="100%"
-        />
-        <div id="hostel3Text">
-          <h3>The Tokyo Station Hotel</h3>
+      <h3>The Tokyo Station Hotel</h3>
+      <div class="hostel">
+        <div class="hostel-photo">
+          <img
+            src="./assets/Photo hotel 3.jpeg"
+            alt="Photo de The Tokyo Station Hotel"
+            id="hostel3-photo"
+            width="100%"
+          />
+        </div>
+        <div class="hostel-text">
           <p>Hôtel à Tokyo (Arrondissement de Chiyoda, Tokyo)</p>
           <p>
             Rouvert en 2012 après d’importants travaux de rénovation, le Tokyo
@@ -114,77 +120,124 @@
       <button id="arrow"></button>
     </h2>
     <div id="restaurant">
-      <div id="restaurant1">
-        <h3>Sushizanmai Main Branch</h3>
-        <img
-          src="./assets/Photo Restaurant 1.jpg"
-          alt="Photo de Sushizanmai Main Branch"
-          id="restaurant1-photo"
-          width="100%"
-        />
-        <p>Restaurant de Sushi</p>
-        <p>Adresse : 4 Chome-11-9 Tsukiji, Chuo City, Tokyo 104-0045, Japon</p>
-        <a
-          href="http://www.kiyomura.co.jp/menu/detail/1/?category=1"
-          target="_blank"
-          >Menu</a
-        >
-        <p>
-          Notre avis : Excellent rapport qualité-prix. Nous donnons une mention
-          spéciale pour les sushis au thon. Ce sont les meilleurs sushis que
-          nous ayons mangé jusqu’à présent.
-        </p>
+      <h3>Sushizanmai Main Branch</h3>
+      <div class="restaurant">
+        <div class="restaurant-photo">
+          <img
+            src="./assets/Photo Restaurant 1.jpg"
+            alt="Photo de Sushizanmai Main Branch"
+            id="restaurant1-photo"
+          />
+        </div>
+        <div class="restaurant-text">
+          <p>Restaurant de Sushi</p>
+          <p>
+            <em> Adresse :</em> 4 Chome-11-9 Tsukiji, Chuo City, Tokyo 104-0045,
+            Japon
+          </p>
+          <a
+            href="http://www.kiyomura.co.jp/menu/detail/1/?category=1"
+            target="_blank"
+            >Menu</a
+          >
+          <p>
+            <em> Notre avis :</em> Excellent rapport qualité-prix. Nous donnons
+            une mention spéciale pour les sushis au thon. Ce sont les meilleurs
+            sushis que nous ayons mangé jusqu’à présent.
+          </p>
+        </div>
       </div>
-      <div id="restaurant2">
-        <h3>Nabezo Shibuya Koen Dori</h3>
-        <img
-          src="./assets/Photo Restaurant 2.jpg"
-          alt="Photo de Nabezo Shibuya Koen Dori"
-          id="restaurant2-photo"
-          width="100%"
-        />
-        <p>Restaurant de Sukiyaki et Shabu-Shabu</p>
-        <p>
-          Adresse : Japon, 〒150-0042 Tokyo, Shibuya City, Udagawacho, 20-15,
-          Humax Pavilion, 8F
-        </p>
-        <a
-          href="https://nabe-zo.com/blog/wp-content/uploads/2016/02/9f76b3ce9c903abc2320cacc120572d7-2.pdf"
-          target="_blank"
-          >Menu</a
-        >
-        <p>
-          Notre avis : Endroit raffiné et sympathique pour goûter du shabu shabu
-          à volonté (viande aussi). Bien indiqué depuis l'extérieur. Le
-          personnel parle anglais.
-        </p>
+      <h3>Nabezo Shibuya Koen Dori</h3>
+      <div class="restaurant">
+        <div class="restaurant-photo">
+          <img
+            src="./assets/Photo Restaurant 2.jpg"
+            alt="Photo de Nabezo Shibuya Koen Dori"
+            id="restaurant2-photo"
+          />
+        </div>
+        <div class="restaurant-text" id="restaurant2-text">
+          <p>Restaurant de Sukiyaki et Shabu-Shabu</p>
+          <p>
+            <em> Adresse :</em> Japon, 〒150-0042 Tokyo, Shibuya City,
+            Udagawacho, 20-15, Humax Pavilion, 8F
+          </p>
+          <a
+            href="https://nabe-zo.com/blog/wp-content/uploads/2016/02/9f76b3ce9c903abc2320cacc120572d7-2.pdf"
+            target="_blank"
+            >Menu</a
+          >
+          <p>
+            <em> Notre avis :</em> Endroit raffiné et sympathique pour goûter du
+            shabu shabu à volonté (viande aussi). Bien indiqué depuis
+            l'extérieur. Le personnel parle anglais.
+          </p>
+        </div>
       </div>
-      <div id="restaurant3">
-        <h3>Gyukatsu Motomura Harajuku</h3>
-        <img
-          src="./assets/Photo Restaurant 3.jpg"
-          alt="Photo de Gyukatsu Motomura Harajuku"
-          id="restaurant3-photo"
-          width="100%"
-        />
-        <p>Restaurant</p>
-        <p>
-          Adresse : Japon, 〒150-0001 Tokyo, Shibuya City, Jingumae, 3
-          Chome-23-2 地下１階 エヌエスビル
-        </p>
-        <a href="https://www.gyukatsu-motomura.com/menu" target="_blank"
-          >Menu</a
-        >
-        <p>
-          Notre avis : Fantastique. Délicieux. Incroyable. Si vous êtes
-          n'importe où près de cet endroit, vous DEVEZ l'essayer! Super sympa,
-          nourriture incroyable, bonne ambiance.
-        </p>
+      <h3>Gyukatsu Motomura Harajuku</h3>
+      <div class="restaurant">
+        <div class="restaurant-photo">
+          <img
+            src="./assets/Photo Restaurant 3.jpg"
+            alt="Photo de Gyukatsu Motomura Harajuku"
+            id="restaurant3-photo"
+          />
+        </div>
+        <div class="restaurant-text">
+          <p>Restaurant</p>
+          <p>
+            Adresse : Japon, 〒150-0001 Tokyo, Shibuya City, Jingumae, 3
+            Chome-23-2 地下１階 エヌエスビル
+          </p>
+          <a href="https://www.gyukatsu-motomura.com/menu" target="_blank"
+            >Menu</a
+          >
+          <p>
+            Notre avis : Fantastique. Délicieux. Incroyable. Si vous êtes
+            n'importe où près de cet endroit, vous DEVEZ l'essayer! Super sympa,
+            nourriture incroyable, bonne ambiance.
+          </p>
+        </div>
       </div>
     </div>
     <div id="carte">
-      <h2>Carte interactive</h2>
+      <h2>Carte interactive <button id="arrow"></button></h2>
       <img src="./assets/Carte Tokyo.png" alt="Carte Tokyo" width="100%x" />
     </div>
+    <footer>
+      <div class="logofooter">
+        <div class="reseaux">
+          <img class="insta" src="assets/insta blanc.png" alt="logo insta" />
+          <img
+            class="twitter"
+            src="assets/twitter blanc.png"
+            alt="logo twitter"
+          />
+          <img class="github" src="assets/github blanc.png" alt="logo github" />
+          <img class="fb" src="assets/fb blanc.png" alt="logo facebook" />
+          <img
+            class="linkedin"
+            src="assets/linkedin blanc.png"
+            alt="logo linkedin"
+          />
+        </div>
+        <div class="arrowjapan">
+          <img class="arrow" src="assets/fleche.png" alt="fleche" />
+          <img class="logojapan" src="assets/logojapan.png" alt="logo japan" />
+        </div>
+      </div>
+
+      <div class="categoriefooter">
+        <div class="accueilfooter">Accueil</div>
+        <div class="preparationfooter">Préparation au voyage</div>
+        <div class="adressesfooter">Adresses</div>
+        <div class="aproposfooter">A propos</div>
+      </div>
+
+      <div class="copyrightfooter">
+        <img class="copyright" src="assets/copyrigh.png" alt="copyright" />
+        <p>2022 Tokyo Express. Tous droits réservés</p>
+      </div>
+    </footer>
   </body>
 </html>
