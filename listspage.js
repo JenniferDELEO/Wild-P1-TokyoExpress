@@ -1,6 +1,6 @@
 const map = L.map("map").setView([35.6894, 139.692], 12);
-L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
-  maxZoom: 19,
+L.tileLayer("https://{s}.tile.openstreetmap.fr/osmfr/{z}/{x}/{y}.png", {
+  maxZoom: 20,
   attribution:
-    '&copy; <a href="https://openstreetmap.org/copyright">OpenStreetMap contributors</a>',
+    '&copy; OpenStreetMap France | &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
 }).addTo(map);
