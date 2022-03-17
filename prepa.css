@@ -1,0 +1,40 @@
+.navlogo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logoburger {
+    width : 15%;
+    height: 13%;
+    margin : 2%;
+}
+
+#logojapan {
+    width : 24%;
+    height: 18%;
+    margin-left: 2%;
+}
+
+
+.navlogo2 {
+    display: flex;
+}
+
+#logoburger2 {
+    width : 15%;
+    height: 13%;
+    margin : 2%;
+    justify-content: flex-end;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 3.5rem;
+    padding-top: 20%;
+    padding-bottom: 20%;
+}
+
