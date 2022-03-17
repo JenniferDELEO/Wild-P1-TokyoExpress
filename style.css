@@ -104,3 +104,7 @@ footer {
 .categoriefooter {
   margin: 8px;
 }
+
+#map {
+  height: 50vh;
+}

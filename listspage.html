@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="listspage.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin=""
+    />
     <title>Bonnes adresses</title>
   </head>
   <body>
@@ -35,7 +41,7 @@
         />
         <p>
           Le Sensō-ji est un temple bouddhiste situé à Tokyo, dans le quartier
-          d'Asakusa. C'est le plus vieux temple de la capitale japonaise...
+          d'Asakusa...
         </p>
       </div>
       <div id="skytree">
@@ -47,9 +53,7 @@
         />
         <p>
           La Tokyo Skytree est une tour de radiodiffusion du Japon, située dans
-          l'arrondissement Sumida de Tokyo. Haute de 634 mètres, elle devient,
-          le jour de son inauguration en 2012, la deuxième plus haute structure
-          autoportante du monde...
+          l'arrondissement Sumida de Tokyo....
         </p>
       </div>
     </div>
@@ -71,8 +75,7 @@
           <p>Hôtel à Tokyo (Arrondissement de Shibuya)</p>
           <p>
             Situé dans le centre de Shinjuku, à seulement 4 minutes à pied de la
-            gare de Shinsen-Shinjuku et de la gare JR Shinjuku, l'Hotel Sunroute
-            Plaza propose des chambres...
+            gare de Shinsen-Shinjuku et de la gare JR Shinjuku...
           </p>
         </div>
       </div>
@@ -90,8 +93,7 @@
           <p>Hôtel à Tokyo (Arrondissement d'Ōta)</p>
           <p>
             Avec son hall situé à côté de l'aéroport Haneda, The Royal Park
-            Hotel Tokyo Haneda est accessible depuis le terminal international
-            de l'aéroport.
+            Hotel Tokyo Haneda...
           </p>
         </div>
       </div>
@@ -109,8 +111,7 @@
           <p>Hôtel à Tokyo (Arrondissement de Chiyoda, Tokyo)</p>
           <p>
             Rouvert en 2012 après d’importants travaux de rénovation, le Tokyo
-            Station Hotel est classé « bien culturel d’importance ». Il propose
-            de belles chambres au style européen classique.
+            Station Hotel est classé « bien culturel d’importance »...
           </p>
         </div>
       </div>
@@ -131,20 +132,12 @@
         </div>
         <div class="restaurant-text">
           <p>Restaurant de Sushi</p>
-          <p>
-            <em> Adresse :</em> 4 Chome-11-9 Tsukiji, Chuo City, Tokyo 104-0045,
-            Japon
-          </p>
           <a
             href="http://www.kiyomura.co.jp/menu/detail/1/?category=1"
             target="_blank"
             >Menu</a
           >
-          <p>
-            <em> Notre avis :</em> Excellent rapport qualité-prix. Nous donnons
-            une mention spéciale pour les sushis au thon. Ce sont les meilleurs
-            sushis que nous ayons mangé jusqu’à présent.
-          </p>
+          <p><em> Notre avis :</em> Excellent rapport qualité-prix...</p>
         </div>
       </div>
       <h3>Nabezo Shibuya Koen Dori</h3>
@@ -158,10 +151,6 @@
         </div>
         <div class="restaurant-text" id="restaurant2-text">
           <p>Restaurant de Sukiyaki et Shabu-Shabu</p>
-          <p>
-            <em> Adresse :</em> Japon, 〒150-0042 Tokyo, Shibuya City,
-            Udagawacho, 20-15, Humax Pavilion, 8F
-          </p>
           <a
             href="https://nabe-zo.com/blog/wp-content/uploads/2016/02/9f76b3ce9c903abc2320cacc120572d7-2.pdf"
             target="_blank"
@@ -169,8 +158,7 @@
           >
           <p>
             <em> Notre avis :</em> Endroit raffiné et sympathique pour goûter du
-            shabu shabu à volonté (viande aussi). Bien indiqué depuis
-            l'extérieur. Le personnel parle anglais.
+            shabu shabu à volonté...
           </p>
         </div>
       </div>
@@ -184,26 +172,19 @@
           />
         </div>
         <div class="restaurant-text">
-          <p>Restaurant</p>
-          <p>
-            Adresse : Japon, 〒150-0001 Tokyo, Shibuya City, Jingumae, 3
-            Chome-23-2 地下１階 エヌエスビル
-          </p>
+          <p>Restaurant traditionnel japonais</p>
           <a href="https://www.gyukatsu-motomura.com/menu" target="_blank"
             >Menu</a
           >
-          <p>
-            Notre avis : Fantastique. Délicieux. Incroyable. Si vous êtes
-            n'importe où près de cet endroit, vous DEVEZ l'essayer! Super sympa,
-            nourriture incroyable, bonne ambiance.
-          </p>
+          <p>Notre avis : Fantastique. Délicieux. Incroyable...</p>
         </div>
       </div>
     </div>
     <div id="carte">
       <h2>Carte interactive <button id="arrow"></button></h2>
-      <img src="./assets/Carte Tokyo.png" alt="Carte Tokyo" width="100%x" />
+      <div id="map"></div>
     </div>
+
     <footer>
       <div class="logofooter">
         <div class="reseaux">
@@ -239,5 +220,12 @@
         <p>2022 Tokyo Express. Tous droits réservés</p>
       </div>
     </footer>
+
+    <script
+      src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+      crossorigin=""
+    ></script>
+    <script src="./listspage.js"></script>
   </body>
 </html>
