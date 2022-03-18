@@ -19,7 +19,6 @@
 h2 {
     font-size: 1.2em;
     font-weight:normal;
-    padding: 2%;
 }
 
 .title {
@@ -27,7 +26,7 @@ h2 {
 }
 
 .texte {
-    padding: 4%;
+    padding: 5%;
 }
 
 #beforeleaving {
@@ -59,13 +58,6 @@ span {
     font-size:initial;
 }
 
-.done {
-    text-decoration: line-through;
-  }
-  
-button {
-    cursor: pointer;
-  }
 
 .special {
     height: 100vh;
@@ -99,7 +91,6 @@ button {
 
 ul {
     list-style-type: none;
-    padding: ;
   }
 
 a {
@@ -112,7 +103,9 @@ a:hover {
     font-size: 1.2em;
   }
 
-
+input {
+    cursor: pointer;
+}
 
 
 
