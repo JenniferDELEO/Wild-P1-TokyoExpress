@@ -40,23 +40,35 @@ h2 {
 
 .container2 {
     background-color: rgba(169,195,214,0.30000001192092896);
-    padding: 5% 7%;
-    border-radius: 4%;
-    display: flex;
-    flex-direction: column;
+    padding: 5% 5%;
+    margin: 16%;
+    border-radius: 4%; 
+    text-align: center;
+    justify-content: space-between;
 }
+
 
 h3 {
     font-weight: normal;
     font-size: 1.1em;
     text-align: center;
+    padding-bottom: 5%;
 }
 
+span {
+    font-size:initial;
+}
 
 .special {
     height: 100vh;
     background-image: linear-gradient(to top, #818080, #fcfbfb);
+    
 }
+
+.btn-complete {
+    background : green;
+}
+
 
 .navlogo2 {
     display: flex;
@@ -74,10 +86,13 @@ h3 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 3em;
+    font-size: 2.6em;
     padding-top: 18%;
     padding-bottom: 10%;
+    font-family: "popins", sans-serif;
 }
+
+
 
 
 

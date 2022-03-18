@@ -10,5 +10,10 @@
         "ecmaVersion": "latest"
     },
     "rules": {
+        "editor.formatOnSave": true,
+        "editor.formatOnPaste": true,
+        "bracketPairColorizer.depreciation-notice": false,
+        "git.ignoreMissingGitWarning": true,
+        "security.workspace.trust.untrustedFiles": "open"
     }
 }
