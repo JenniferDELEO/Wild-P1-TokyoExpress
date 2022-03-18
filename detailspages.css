@@ -1,22 +1,58 @@
 .photo-lieu1 {
-    width: 100%;
-    padding: 0;
+  width: 100%;
+  padding: 0;
 }
 
 .content {
-    background-color: #A9C3D6;
+  background-color: #a9c3d6;
+}
 
+.corpstexte {
+  padding: 32px;
 }
 
 .commentaire {
-    margin-top: 20px;
-    margin-bottom: 30px;
-    margin: 20px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  margin: 12px;
+}
+
+#leavecom {
+  padding: 0px 23px;
 }
 
 textarea {
-    height: 100px;
-    margin: 20px;
+  height: 100px;
+  margin: 20px;
   width: 90%;
-
 }
+
+.fa-star {
+  color: gray;
+  cursor: pointer;
+  padding: 0.0625rem;
+}
+.fa-star.gold {
+  color: #ffdc0f;
+}
+
+.rating {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 50%;
+}
+.stars {
+  display: inline-flex;
+  justify-content: center;
+  font-size: 3em;
+}
+
+.stars:hover .fa-star {
+  color: #ffdc0f;
+}
+.stars .fa-star:hover ~ .fa-star {
+  color: gray;
+}
+
+
