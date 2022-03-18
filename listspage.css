@@ -131,21 +131,22 @@ p {
 
 img {
   cursor: pointer;
-  opacity: 80%;
+  opacity: 100%;
   transition: 0.3s;
 }
 img:hover {
-  opacity: 100%;
+  opacity: 80%;
 }
 
 #map {
-  height: 60vh;
+  height: 50vh;
+  width: 70%;
+  margin: 0 auto;
 }
 
 @media screen and (min-width : 750px) {
-  #garden-photo,
-#senso-ji-photo,
-#skytree-photo {
-  width: 60%;
-}
+  body {
+    margin: 0 auto;
+    width: 65%;
+  }
 }
