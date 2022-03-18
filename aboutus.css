@@ -1,0 +1,67 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+#aboutUsIntro{
+    border-radius: 10px;
+}
+
+h2{
+    font-size: 1.2em;
+}
+
+#aboutUsCardsContainer{
+    display: flex;
+}
+
+.cardsContainer{
+    width: 94vw;
+    margin-left: 3vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* margin-right: 3%; */
+      /* min-width:670px; */
+    /* height: 350px; */
+}
+
+.card{
+    position: relative;
+    width:150px;
+    height: 168px;
+    margin: 10px;
+}
+
+.polaroidFrame{
+    position: absolute;
+    width:100%;
+}
+
+.profilePic{
+    position: absolute;
+    width: 85%;
+    height:76%;
+    z-index: 1;
+    margin-left:11px;
+    margin-top:11px;
+}
+
+.cardName{
+    position: absolute;
+    margin-top:140px;
+    margin-left:55px;
+}
+
+
+.cardFlex
+{
+    width:17vw;
+    /*height: 350px;*/
+   /* width: 100%; */
+}
+
+.inCardFlex{
+    width:100%;
+}
