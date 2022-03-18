@@ -141,3 +141,12 @@ img:hover {
 #map {
   height: 60vh;
 }
+
+@media screen and (min-width : 750px) {
+  #garden-photo,
+#senso-ji-photo,
+#skytree-photo {
+  margin: auto;
+  width: 60%;
+}
+}
