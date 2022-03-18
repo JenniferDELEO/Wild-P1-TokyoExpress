@@ -7,10 +7,18 @@
   background-color: #a9c3d6;
 }
 
+.corpstexte {
+  padding: 32px;
+}
+
 .commentaire {
   margin-top: 20px;
   margin-bottom: 30px;
-  margin: 20px;
+  margin: 12px;
+}
+
+#leavecom {
+  padding: 0px 23px;
 }
 
 textarea {
