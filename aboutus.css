@@ -1,0 +1,118 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+/* taken from prepa.css*/
+.navlogo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+#logoburger {
+    width : 15%;
+    height: 13%;
+}
+
+#logojapan {
+    width : 24%;
+    height: 18%;
+    margin-left: 2%;
+}
+
+
+.navlogo2 {
+    display: flex;
+    justify-content: flex-end;
+    padding: 15px;
+}
+
+#logoburger2 {
+    width : 15%;
+    height: 13%;
+    margin : 2%;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 3.5rem;
+    padding-top: 20%;
+    padding-bottom: 20%;
+}
+
+.container2 {
+    background-color: A9C3D6;
+}
+
+/* end of "taken from prepa.css" */
+
+
+
+
+#aboutUsIntro{
+    border-radius: 10px;
+}
+
+h2{
+    font-size: 1.2em;
+}
+
+#aboutUsCardsContainer{
+    display: flex;
+}
+
+.cardsContainer{
+    width: 94vw;
+    margin-left: 3vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* margin-right: 3%; */
+      /* min-width:670px; */
+    /* height: 350px; */
+}
+
+.card{
+    position: relative;
+    width:150px;
+    height: 168px;
+    margin: 10px;
+}
+
+.polaroidFrame{
+    position: absolute;
+    width:100%;
+}
+
+.profilePic{
+    position: absolute;
+    width: 85%;
+    height:76%;
+    z-index: 1;
+    margin-left:11px;
+    margin-top:11px;
+}
+
+.cardName{
+    position: absolute;
+    margin-top:140px;
+    margin-left:55px;
+}
+
+
+.cardFlex
+{
+    width:17vw;
+    /*height: 350px;*/
+   /* width: 100%; */
+}
+
+.inCardFlex{
+    width:100%;
+}
