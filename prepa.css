@@ -1,20 +1,20 @@
-.navlogo {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px;
-}
+/* .navlogo { */
+    /* display: flex; */
+    /* justify-content: space-between; */
+    /* align-items: center; */
+    /* padding: 15px; */
+/* } */
 
-#logoburger {
-    width : 15%;
-    height: 13%;
-}
+/* #logoburger { */
+    /* width : 15%; */
+    /* height: 13%; */
+/* } */
 
-#logojapan {
-    width : 24%;
-    height: 18%;
-    margin-left: 2%;
-}
+/* #logojapan { */
+    /* width : 24%; */
+    /* height: 18%; */
+    /* margin-left: 2%; */
+/* } */
 
 h2 {
     font-size: 1.2em;
