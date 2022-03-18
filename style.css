@@ -120,3 +120,48 @@ footer {
   font-size: 1em;
   text-decoration: none;
 }
+
+.navlogo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+  }
+  
+  #logoburger {
+    width: 60px;
+    height: 60px;
+    margin-right: 4%;
+  }
+  
+  #logojapan {
+    width: 90px;
+    height: 90px;
+    margin-left: 4%;
+  }
+  
+  .navlogo2 {
+    display: flex;
+    justify-content: flex-end;
+    padding: 15px;
+  }
+  
+  #logoburger2 {
+    width: 15%;
+    height: 13%;
+    margin: 2%;
+  }
+  
+  .menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 3.5rem;
+    padding-top: 20%;
+    padding-bottom: 20%;
+  }
+  
+  .container2 {
+    background-color: A9C3D6;
+  }
