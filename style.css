@@ -105,3 +105,12 @@ footer {
 .categoriefooter {
   margin: 8px;
 }
+
+.categoriefooter a:link {
+  color: #2c2c2e;
+  font-size: 1em;
+}
+ .categoriefooter a:visited {
+  color: #2c2c2e;
+  font-size: 1em;
+}
