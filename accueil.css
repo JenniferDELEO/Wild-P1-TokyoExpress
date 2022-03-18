@@ -150,4 +150,19 @@ figure.snip0015:hover figcaption::before {
 }
 
 @media screen and (min-width: 750px;) {
+  main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 32px;
+  }
+
+  section {
+    padding: 32px;
+  }
+
+  .imgarticle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
