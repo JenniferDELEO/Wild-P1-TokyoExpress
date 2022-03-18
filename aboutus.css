@@ -5,6 +5,7 @@
 }
 
 /* taken from prepa.css*/
+
 .navlogo {
     display: flex;
     justify-content: space-between;
@@ -22,7 +23,6 @@
     height: 18%;
     margin-left: 2%;
 }
-
 
 .navlogo2 {
     display: flex;
@@ -52,8 +52,11 @@
 
 /* end of "taken from prepa.css" */
 
-
-
+h2{
+    font-size: 1.2em;
+    text-align: center;
+}
+    
 #aboutUsIntro{
     border-radius: 10px;
     background-color: rgba(169, 195, 214, 0.3);
@@ -61,12 +64,20 @@
     margin:1rem;
 }
 
-h2{
-    font-size: 1.2em;
+#contactFormAboutus{
+    border-radius: 10px;
+    background-color: rgba(169, 195, 214, 0.3);
+    padding:1rem;
+    margin:1rem;
 }
 
-#contactFormAboutus{
-    margin:1rem;
+label{
+    padding-top:1rem;
+    padding-bottom:4rem;
+}
+
+input{
+    margin-top:0.2rem;
 }
 
 #aboutUsCardsContainer{
@@ -127,11 +138,16 @@ h2{
 }
 */
 
-
 @media screen and (min-width:600px) {
     #aboutUsCardsContainer{
         flex-direction: row;
-        width: 93vw;
-    
+        justify-content: space-between;
+        width: 94vw;
+        margin-left: 3vw;
       }
+
+      h2{
+        text-align: left;
+        padding-left: 2rem;
     }
+}
