@@ -30,6 +30,9 @@ h2 {
     padding: 4%;
 }
 
+#beforeleaving {
+    font-size: 1.3em;
+}
 .img {
     margin: 5% 0;
 }
@@ -58,11 +61,16 @@ h2 {
 
 
 .container2 {
-
     background-color: rgba(169,195,214,0.30000001192092896);
+    margin: 8% 20%;
+    padding: 5% 7%;
+    border-radius: 4%;
+    display: flex;
+    flex-direction: column;
 }
 
 h3 {
     font-weight: normal;
-    font-size: large;
+    font-size: 1.1em;
+    text-align: center;
 }
