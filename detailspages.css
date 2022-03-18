@@ -1,54 +1,92 @@
 .photo-lieu1 {
-    width: 100%;
-    padding: 0;
-
+  width: 100%;
+  padding: 0;
 }
 
 .content {
-    background-color: #A9C3D6;
-
+  background-color: #a9c3d6;
 }
 
 .commentaire {
-    margin-top: 20px;
-    margin-bottom: 30px;
-    margin: 20px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  margin: 20px;
 }
 
 textarea {
-    height: 100px;
-    margin: 20px;
+  height: 100px;
+  margin: 20px;
   width: 90%;
-
 }
 
 .fa-star {
-	color: gray;
-	cursor: pointer;
-	padding: 0.0625rem;
+  color: gray;
+  cursor: pointer;
+  padding: 0.0625rem;
 }
 .fa-star.gold {
-	color: #ffdc0f;
+  color: #ffdc0f;
 }
 
 .rating {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-    font-size: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 50%;
+}
+.stars {
+  display: inline-flex;
+  justify-content: center;
+  font-size: 3em;
 }
 
-	.stars {
-		display: inline-flex;
-		justify-content: center;
-		font-size: 3em;
-	}
+.stars:hover .fa-star {
+  color: #ffdc0f;
+}
+.stars .fa-star:hover ~ .fa-star {
+  color: gray;
+}
 
-	.stars:hover .fa-star {
-		color: #ffdc0f;
-	}
-	.stars .fa-star:hover ~ .fa-star {
-		color: gray;
-	}
+.navlogo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+}
 
+#logoburger {
+  width: 15%;
+  height: 13%;
+}
 
+#logojapan {
+  width: 24%;
+  height: 18%;
+  margin-left: 2%;
+}
+
+.navlogo2 {
+  display: flex;
+  justify-content: flex-end;
+  padding: 15px;
+}
+
+#logoburger2 {
+  width: 15%;
+  height: 13%;
+  margin: 2%;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 3.5rem;
+  padding-top: 20%;
+  padding-bottom: 20%;
+}
+
+.container2 {
+  background-color: A9C3D6;
+}

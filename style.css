@@ -16,7 +16,7 @@ h1 {
     color: #7D191B;
     padding: 20px 20px;
     margin: 20px 40px;
-    font-weight: bold;
+    font-weight: 900;
 }
 
 body {
@@ -106,3 +106,4 @@ footer {
 .categoriefooter {
     margin: 8px;
 }
+
