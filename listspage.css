@@ -2,6 +2,7 @@ h2 {
   width: 95%;
   background-color: rgba(218, 226, 228, 0.25);
   border: solid 1px black;
+  border-radius: 5px;
   padding: 8px;
   margin: 20px auto;
   cursor: pointer;
