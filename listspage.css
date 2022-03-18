@@ -28,6 +28,11 @@ h3 {
   text-align: center;
   margin-bottom: 10px;
   margin-top: 10px;
+  color: #2c2c2e;
+}
+
+h3:visited {
+  color: #2c2c2e;
 }
 
 #garden-photo,
@@ -104,6 +109,30 @@ img:hover {
 @media screen and (min-width : 750px) {
   body {
     margin: 0 auto;
-    width: 65%;
+    width: 70%;
   }
+  #arrow {
+    display: none;
+  }
+  #places {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .places-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;  
+    align-items: center;
+    padding: 15px;
+    width: 30%;
+    background-color: rgba(218, 226, 228, 0.137);
+    border: 1px solid rgb(218, 226, 228);
+    height: 330px;
+    box-shadow: 10px 10px 5px rgb(218, 226, 228);
+  }
+
+.places-container p {
+  text-align: center;
+}
 }
