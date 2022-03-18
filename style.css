@@ -28,9 +28,10 @@ body {
   color: #2c2c2e;
 }
 
-.corpstexte {
-  padding: 10px 10px;
+.corpstexte, .corpstexte2, .menuResto {
+   padding: 10px 10px;
 }
+
 
 footer {
   width: 100%;
