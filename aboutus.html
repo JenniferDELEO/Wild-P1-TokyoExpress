@@ -8,8 +8,18 @@
     <link href="style.css" rel="stylesheet" type="text/css" />
     <link href="aboutus.css" rel="stylesheet" type="text/css" />
   </head>
-  <body>
-    <!-- HEADER  -->
+
+  <header>
+     <!-- header taken from preparation.html -->
+     <nav class ="navlogo">
+        <img src="assets/logojapan.png" alt="Logo japan" id="logojapan"/>
+        <img src="assets/logoburger.png" alt="Logo burger" id="logoburger"/>
+    </nav>
+</header>
+
+<body>
+   
+    
       <h1 id="aboutUsh1">A propos de nous</h1>
 
     <div id="aboutUsIntro">
@@ -19,7 +29,7 @@
         du 14/03/2022 au 25/03/2022, notre équipe de 5 a :<br />
         - tout d'abord réalisé un maquettage papier<br />
         - puis un prototypage sur Figma<br />
-        - ENSUITE A REDIGER : GITHUB, Travail en équipe...
+        - et travaillé en équipe via GitHub.
       </p>
     </div>
 
@@ -47,11 +57,13 @@
     <div id="theTeam">
         <h2>L'équipe</h2>
 
-        <div id="aboutUsCards">
+        <div id="aboutUsCardsContainer">
             <div class="card">
-                <img class="polaroidFrame" src="./assets/aboutUs_PolaroidBackGround.png" alt="Polaroid frame"/>
-                <img class="profilePic" src="./assets/aboutUs_Anna.jpg" alt="Anna's Picture"/>
-                <p class="cardName"> Anna</p>
+                    <img class="polaroidFrame" src="./assets/aboutUs_PolaroidBackGround.png" alt="Polaroid frame"/>
+                    <div>
+                       <img class="profilePic" src="./assets/aboutUs_Anna.jpg" alt="Anna's Picture"/> 
+                    </div>
+                    <p class="cardName"> Anna</p>
             </div>   
             
             <div class="card">
@@ -76,13 +88,26 @@
                 <img class="polaroidFrame" src="./assets/aboutUs_PolaroidBackGround.png" alt="Polaroid frame"/>
                 <img class="profilePic" src="./assets/aboutUs_Gaspard.jpg" alt="Gaspard's Picture"/>
                 <p class="cardName"> Gaspard</p>
-            </div>  
+            </div>
 
         </div>
         
+     <!-- 
+     <div class="cardsContainer">
+
+    <div class=cardFlex>
+        <img class="inCardFlex" src="./assets/aboutUs_PolaroidBackGround.png">
+        <img class="profilePic, inCardFlex" src="./assets/aboutUs_Anna.jpg" alt="Anna's Picture"/>
+    </div>
+    <img class="cardFlex" src="./assets/aboutUs_PolaroidBackGround.png">
+    <img class="cardFlex" src="./assets/aboutUs_PolaroidBackGround.png">
+    <img class="cardFlex" src="./assets/aboutUs_PolaroidBackGround.png">
+    <img class="cardFlex" src="./assets/aboutUs_PolaroidBackGround.png">
+    </div>
 
     </div>
-     
+     -->
+
 
     <footer>
           <!-- Footer copied from listpage.html , if modified from listpage.html : take it again there -->

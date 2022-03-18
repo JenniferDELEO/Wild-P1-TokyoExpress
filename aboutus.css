@@ -1,4 +1,7 @@
-#aboutUsh1{
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
 }
 
 #aboutUsIntro{
@@ -9,8 +12,19 @@ h2{
     font-size: 1.2em;
 }
 
-#aboutUsCards{
+#aboutUsCardsContainer{
     display: flex;
+}
+
+.cardsContainer{
+    width: 94vw;
+    margin-left: 3vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* margin-right: 3%; */
+      /* min-width:670px; */
+    /* height: 350px; */
 }
 
 .card{
@@ -40,3 +54,14 @@ h2{
     margin-left:55px;
 }
 
+
+.cardFlex
+{
+    width:17vw;
+    /*height: 350px;*/
+   /* width: 100%; */
+}
+
+.inCardFlex{
+    width:100%;
+}
