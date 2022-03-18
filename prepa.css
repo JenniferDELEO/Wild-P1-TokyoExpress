@@ -57,6 +57,7 @@ h3 {
     height: 100vh;
     background-image: linear-gradient(to top, #818080, #fcfbfb);
 }
+
 .navlogo2 {
     display: flex;
     justify-content: flex-end;
