@@ -4,16 +4,232 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="listspage.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin=""
+    />
     <title>Bonnes adresses</title>
   </head>
   <body>
+    <nav class="navlogo">
+      <img src="assets/logojapan.png" alt="Logo japan" id="logojapan" />
+      <img src="assets/logoburger.png" alt="Logo burger" id="logoburger" />
+    </nav>
     <header>
       <h1>Les bonnes adresses</h1>
     </header>
-    <h2 id="lieux">Lieux à visiter<button></button></h2>
-    <h2 id="hotel">Hotel<button></button></h2>
-    <h2 id="restaurant">Restaurant<button></button></h2>
-    <img src="./assets/Carte Tokyo.png" alt="Carte Tokyo" width="100%" />
+    <h2 id="placesTitle">Lieux à visiter<button id="arrow"></button></h2>
+    <div id="places">
+      <div id="garden">
+        <h3>Les jardins de Shinjuku</h3>
+        <img
+          src="./assets/Lieu 1.jpeg"
+          alt="Photo du jardin de Shinjuku"
+          id="garden-photo"
+        />
+        <p>
+          Le jardin de Shinjuku, surnommé "oasis urbaine", est l’un des parcs
+          les plus importants de la capitale...
+        </p>
+      </div>
+      <div id="senso-ji">
+        <h3>Sensõ-Ji</h3>
+        <img
+          src="./assets/Photo senso ji.jpg"
+          alt="Photo de Senso Ji"
+          id="senso-ji-photo"
+        />
+        <p>
+          Le Sensō-ji est un temple bouddhiste situé à Tokyo, dans le quartier
+          d'Asakusa...
+        </p>
+      </div>
+      <div id="skytree">
+        <h3>Tokyo Skytree</h3>
+        <img
+          src="./assets/Photo la tour Skytree.jpg"
+          alt="Photo de la Tokyo Skytree"
+          id="skytree-photo"
+        />
+        <p>
+          La Tokyo Skytree est une tour de radiodiffusion du Japon, située dans
+          l'arrondissement Sumida de Tokyo....
+        </p>
+      </div>
+    </div>
+    <h2 id="hostelTitle">
+      Hotel
+      <button id="arrow"></button>
+    </h2>
+    <div id="hostel">
+      <h3>Hotel Sunroute Plaza Shinjuku</h3>
+      <div class="hostel">
+        <div class="hostel-photo">
+          <img
+            src="./assets/Photo hotel 1.jpg"
+            alt="Photo Hotel Sunroute Plaza Shinjuku"
+            id="hostel1-photo"
+          />
+        </div>
+        <div class="hostel-text">
+          <p>Hôtel à Tokyo (Arrondissement de Shibuya)</p>
+          <p>
+            Situé dans le centre de Shinjuku, à seulement 4 minutes à pied de la
+            gare de Shinsen-Shinjuku et de la gare JR Shinjuku...
+          </p>
+        </div>
+      </div>
+      <h3>The Royal Park Hotel Tokyo Haneda</h3>
+      <div class="hostel">
+        <div class="hostel-photo">
+          <img
+            src="./assets/Photo hotel 2.jpeg"
+            alt="Photo de The Royal Park Hotel Tokyo Haneda"
+            id="hostel2-photo"
+            width="100%"
+          />
+        </div>
+        <div class="hostel-text" id="hostel2-text">
+          <p>Hôtel à Tokyo (Arrondissement d'Ōta)</p>
+          <p>
+            Avec son hall situé à côté de l'aéroport Haneda, The Royal Park
+            Hotel Tokyo Haneda...
+          </p>
+        </div>
+      </div>
+      <h3>The Tokyo Station Hotel</h3>
+      <div class="hostel">
+        <div class="hostel-photo">
+          <img
+            src="./assets/Photo hotel 3.jpeg"
+            alt="Photo de The Tokyo Station Hotel"
+            id="hostel3-photo"
+            width="100%"
+          />
+        </div>
+        <div class="hostel-text">
+          <p>Hôtel à Tokyo (Arrondissement de Chiyoda, Tokyo)</p>
+          <p>
+            Rouvert en 2012 après d’importants travaux de rénovation, le Tokyo
+            Station Hotel est classé « bien culturel d’importance »...
+          </p>
+        </div>
+      </div>
+    </div>
+    <h2 id="restaurantTitle">
+      Restaurant
+      <button id="arrow"></button>
+    </h2>
+    <div id="restaurant">
+      <h3>Sushizanmai Main Branch</h3>
+      <div class="restaurant">
+        <div class="restaurant-photo">
+          <img
+            src="./assets/Photo Restaurant 1.jpg"
+            alt="Photo de Sushizanmai Main Branch"
+            id="restaurant1-photo"
+          />
+        </div>
+        <div class="restaurant-text">
+          <p>Restaurant de Sushi</p>
+          <a
+            href="http://www.kiyomura.co.jp/menu/detail/1/?category=1"
+            target="_blank"
+            >Menu</a
+          >
+          <p><em> Notre avis :</em> Excellent rapport qualité-prix...</p>
+        </div>
+      </div>
+      <h3>Nabezo Shibuya Koen Dori</h3>
+      <div class="restaurant">
+        <div class="restaurant-photo">
+          <img
+            src="./assets/Photo Restaurant 2.jpg"
+            alt="Photo de Nabezo Shibuya Koen Dori"
+            id="restaurant2-photo"
+          />
+        </div>
+        <div class="restaurant-text" id="restaurant2-text">
+          <p>Restaurant de Sukiyaki et Shabu-Shabu</p>
+          <a
+            href="https://nabe-zo.com/blog/wp-content/uploads/2016/02/9f76b3ce9c903abc2320cacc120572d7-2.pdf"
+            target="_blank"
+            >Menu</a
+          >
+          <p>
+            <em> Notre avis :</em> Endroit raffiné et sympathique pour goûter du
+            shabu shabu à volonté...
+          </p>
+        </div>
+      </div>
+      <h3>Gyukatsu Motomura Harajuku</h3>
+      <div class="restaurant">
+        <div class="restaurant-photo">
+          <img
+            src="./assets/Photo Restaurant 3.jpg"
+            alt="Photo de Gyukatsu Motomura Harajuku"
+            id="restaurant3-photo"
+          />
+        </div>
+        <div class="restaurant-text">
+          <p>Restaurant traditionnel japonais</p>
+          <a href="https://www.gyukatsu-motomura.com/menu" target="_blank"
+            >Menu</a
+          >
+          <p>Notre avis : Fantastique. Délicieux. Incroyable...</p>
+        </div>
+      </div>
+    </div>
+    <div id="carte">
+      <h2>Carte interactive <button id="arrow"></button></h2>
+      <div id="map"></div>
+    </div>
+
+    <footer>
+      <div class="logofooter">
+        <div class="reseaux">
+          <img class="insta" src="assets/insta blanc.png" alt="logo insta" />
+          <img
+            class="twitter"
+            src="assets/twitter blanc.png"
+            alt="logo twitter"
+          />
+          <img class="github" src="assets/github blanc.png" alt="logo github" />
+          <img class="fb" src="assets/fb blanc.png" alt="logo facebook" />
+          <img
+            class="linkedin"
+            src="assets/linkedin blanc.png"
+            alt="logo linkedin"
+          />
+        </div>
+        <div class="arrowjapan">
+          <img class="arrow" src="assets/fleche.png" alt="fleche" />
+          <img class="logojapan" src="assets/logojapan.png" alt="logo japan" />
+        </div>
+      </div>
+
+      <div class="categoriefooter">
+        <div class="accueilfooter">Accueil</div>
+        <div class="preparationfooter">Préparation au voyage</div>
+        <div class="adressesfooter">Adresses</div>
+        <div class="aproposfooter">A propos</div>
+      </div>
+
+      <div class="copyrightfooter">
+        <img class="copyright" src="assets/copyrigh.png" alt="copyright" />
+        <p>2022 Tokyo Express. Tous droits réservés</p>
+      </div>
+    </footer>
+
+    <script
+      src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+      crossorigin=""
+    ></script>
+    <script src="./listspage.js"></script>
   </body>
 </html>
