@@ -93,3 +93,7 @@ img {
 img:hover {
   opacity: 100%;
 }
+
+#map {
+  height: 90vh;
+}
