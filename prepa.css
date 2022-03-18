@@ -38,10 +38,10 @@ h2 {
     margin: 5% 0;
 }
 
-.container2 {
+.todo-container {
     background-color: rgba(169,195,214,0.30000001192092896);
     padding: 5% 5%;
-    margin: 16%;
+    margin: 13% 20%;
     border-radius: 4%; 
     text-align: center;
     justify-content: space-between;
@@ -59,14 +59,18 @@ span {
     font-size:initial;
 }
 
+.done {
+    text-decoration: line-through;
+  }
+  
+button {
+    cursor: pointer;
+  }
+
 .special {
     height: 100vh;
     background-image: linear-gradient(to top, #818080, #fcfbfb);
     
-}
-
-.btn-complete {
-    background : green;
 }
 
 
@@ -84,6 +88,7 @@ span {
 
 .menu {
     display: flex;
+    justify-content: center;
     flex-direction: column;
     align-items: center;
     font-size: 2.6em;
@@ -91,6 +96,22 @@ span {
     padding-bottom: 10%;
     font-family: "popins", sans-serif;
 }
+
+ul {
+    list-style-type: none;
+    padding: ;
+  }
+
+a {
+    text-decoration: none;
+    color: initial;
+}
+
+a:hover {
+    color: #e9e9e9;
+    font-size: 1.2em;
+  }
+
 
 
 

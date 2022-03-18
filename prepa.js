@@ -1,5 +1,8 @@
-function addToDo(event) {
-    event.preventDefault();
+//const deleteBtn = document.createElement('button');
 
-const completedButton = document.createElement("button");
-}
+//actionElement.appendChild(deleteBtn);
+//titleElement.addEventListener('click', () => {
+   // titleElement.classList.toggle('done');
+  //});
+ // line.appendChild(actionElement);
+ // tasksTable.appendChild(line);
