@@ -28,10 +28,11 @@ body {
   color: #2c2c2e;
 }
 
-.corpstexte, .corpstexte2, .menuResto {
-   padding: 10px 10px;
+.corpstexte,
+.corpstexte2,
+.menuResto {
+  padding: 10px 10px;
 }
-
 
 footer {
   width: 100%;
@@ -115,53 +116,99 @@ footer {
   font-size: 1em;
   text-decoration: none;
 }
- .categoriefooter a:visited {
+.categoriefooter a:visited {
   color: #ffffff;
   font-size: 1em;
   text-decoration: none;
 }
 
 .navlogo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+}
+
+#logoburger {
+  width: 60px;
+  height: 60px;
+  margin-right: 4%;
+}
+
+#logojapan {
+  width: 90px;
+  height: 90px;
+  margin-left: 4%;
+}
+
+.navlogo2 {
+  display: flex;
+  justify-content: flex-end;
+  padding: 15px;
+}
+
+#logoburger2 {
+  width: 15%;
+  height: 13%;
+  margin: 2%;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 3.5rem;
+  padding-top: 20%;
+  padding-bottom: 20%;
+}
+
+.container2 {
+  background-color: A9C3D6;
+}
+
+.navdesktop {
+  display: none;
+}
+
+@media screen and (min-width: 700px) {
+  .navlogo {
+    display: none;
+  }
+
+  .navdesktop {
+    display: initial;
+  }
+
+  .navdesktop ul {
     display: flex;
+    list-style: none;
     justify-content: space-between;
     align-items: center;
-    padding: 15px;
+    padding: 2px 15px;
+    background-color: rgba(218, 226, 228, 0.25);
   }
-  
-  #logoburger {
-    width: 60px;
-    height: 60px;
-    margin-right: 4%;
+
+  #homeNav {
+    height: 72px;
+    padding-left: 12px;
   }
-  
-  #logojapan {
-    width: 90px;
-    height: 90px;
-    margin-left: 4%;
+  #prepNav,
+  #placesNav,
+  #aboutNav {
+    color: #7d191b;
+    flex: 1;
+    text-align: center;
+    height: 72px;
+    padding: 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1.4em;
+    cursor: pointer;
   }
-  
-  .navlogo2 {
-    display: flex;
-    justify-content: flex-end;
-    padding: 15px;
+
+  h1 {
+    margin-top: 40px;
+    margin-bottom: 24px;
   }
-  
-  #logoburger2 {
-    width: 15%;
-    height: 13%;
-    margin: 2%;
-  }
-  
-  .menu {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 3.5rem;
-    padding-top: 20%;
-    padding-bottom: 20%;
-  }
-  
-  .container2 {
-    background-color: A9C3D6;
-  }
+}
