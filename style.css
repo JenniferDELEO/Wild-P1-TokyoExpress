@@ -174,11 +174,13 @@ footer {
 
   .navdesktop {
     display: initial;
+    margin-bottom: 54px;
   }
 
   #upNav {
     display: flex;
   }
+
   .navdesktop ul {
     display: flex;
     list-style: none;
@@ -186,14 +188,19 @@ footer {
     align-items: center;
     padding: 0 15px;
     background-color: #7d191b;
+    height: 40px;
   }
 
   #upNav h1 {
     margin: 0;
     text-transform: uppercase;
     text-align: left;
-    background-image: url("./assets/photo-accueil.jpeg");
+    background-image: url("./assets/Photo\ navbar.jpg");
     flex-grow: 1;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: auto 10px;
   }
 
   #homeNav {
@@ -212,7 +219,7 @@ footer {
     padding: 20px;
     border-radius: 5px;
     font-weight: bold;
-    font-size: 1.4em;
+    font-size: 1.2em;
     cursor: pointer;
   }
 

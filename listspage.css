@@ -1,9 +1,12 @@
 h2 {
   width: 95%;
-  background-color: rgba(218, 226, 228, 0.25);
-  border: solid 1px black;
+  background-color: #7d191b;
+  border: solid 1px #7d191b;
+  font-size: large;
+  color: #ffffff;
   border-radius: 5px;
   padding: 8px;
+  padding-left: 24px;
   margin: 24px auto;
   cursor: pointer;
   text-transform: uppercase;
@@ -125,7 +128,7 @@ img:hover {
     display: none;
   }
   h2 {
-    margin: 72px auto;
+    margin: 52px auto;
     cursor: default;
   }
   #places,
