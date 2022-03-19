@@ -163,10 +163,6 @@ footer {
   padding-bottom: 20%;
 }
 
-.container2 {
-  background-color: A9C3D6;
-}
-
 .navdesktop {
   display: none;
 }
@@ -180,23 +176,36 @@ footer {
     display: initial;
   }
 
+  #upNav {
+    display: flex;
+  }
   .navdesktop ul {
     display: flex;
     list-style: none;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    padding: 2px 15px;
-    background-color: rgba(218, 226, 228, 0.25);
+    padding: 0 15px;
+    background-color: #7d191b;
+  }
+
+  #upNav h1 {
+    margin: 0;
+    text-transform: uppercase;
+    text-align: left;
+    background-image: url("./assets/photo-accueil.jpeg");
+    flex-grow: 1;
   }
 
   #homeNav {
     height: 72px;
     padding-left: 12px;
+    padding-right: 12px;
   }
+
   #prepNav,
   #placesNav,
   #aboutNav {
-    color: #7d191b;
+    color: #ffffff;
     flex: 1;
     text-align: center;
     height: 72px;
