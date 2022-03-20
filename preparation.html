@@ -26,7 +26,7 @@
     </div>
 
         
-    <img src = "assets/carte.jpeg" alt ="carte" class ="img" width = 100%/>
+    <img src = "assets/carte.jpeg" alt ="carte" class ="img"/>
 
 
     <div class="texte" id ="admin"> 
@@ -38,7 +38,7 @@
             Aussi, à l’arrivée au Japon, à l’Immigration, on va prendre tes empreintes digitales et une photo.</p>
         </div>
 
-            <img src = "assets/yen.jpeg" alt = "yen" class = "img" width=100% />
+            <img src = "assets/yen.jpeg" alt = "yen" class = "img"/>
 
     <div class="texte" id ="yen" >
         <h2>💸 Budget moyen :</h2>
@@ -51,14 +51,21 @@
         <h2>💴 Monnaie locale :</h2>
 
                 <p> Au Japon, la devise en vigueur est le yen (¥) <br>
+                <p>Tu peux changer des devises en France ou sur place (bureaux de change sont ouvertes tous les jours sur place) ou auprès de ta banque.</p>
                 
-                (dynamic : 1  €uro = 129,42 Yen)
+                    <div id = "converter">
+                        <p> Convertisseur EUROS en YEN </p>
+                        <br>
+                        <FORM Name='Form1'>
+                        Euros <input type='text' Name='euros'>
+                        Yen <input type ='text' Name='yen'>
+                        </FORM>
+                        </div>
+
                 
-                Tu peux changer des devises en France ou sur place (bureaux de change sont ouvertes tous les jours sur place) ou auprès de ta banque.
-                </p>
     </div>
 
-    <img src = "assets/seaside.jpg" alt = "seaside" class = "img" width=100%/>
+    <img src = "assets/seaside.jpg" alt = "seaside" class = "img"/>
 
     <div class="texte" id ="tips">
             
@@ -73,24 +80,21 @@
                     + 8h en hiver</p>
      </div>        
 
-     <fieldset>
-        <legend>Veuillez sélectionner vos intérêts</legend>
-                <div class = "todo-list">
 
-                    <h3> ✅ Check-list: <span> à mettre dans ta valise (ou ton backpack d'aventurier)</span></h3>
-
+            <section class = "todo-list">
+                <div class = "todo-container">
+                    <h3> ✅ Check-list: <br> <span> à mettre dans ta valise (ou ton backpack d'aventurier)</span></h3>
                         <input type=checkbox id="completed" value="coding" checked>
                         <label for="completed"> ton passeport et portefeuille </label><br>
                         <input type=checkbox id="completed" value="coding" checked> 
                         <label for="completed"> ton appareil photo </label><br>
-                        <input type=checkbox id="completed" value="coding" checked>> 
-                        
-                        <input type=checkbox id="completed"/> un adaptateur de prise </input><br>
-                        
-                        <input type=checkbox id="completed"/> de bonnes baskets <br> (n’oublie pas la superficie de Tokyo est de 2 188 km²!) </input><br>
+                        <input type=checkbox id="completed" value="coding" checked> 
+                        <label for="completed"> un adaptateur de prise </label><br>
+                        <input type=checkbox id="completed" value="coding" checked>
+                        <label for="completed"> de bonnes baskets <br> (n’oublie pas la superficie de Tokyo est de 2 188 km²!) </label><br>
                     
             </div>
-        </div>
+        </section>
             
             <div>
 <footer>
@@ -123,6 +127,8 @@
           <p>2022 Tokyo Express. Tous droits réservés</p>
         </div>
     </footer>
+
+<script src="prepa.js"></script>
 
 </body>
 
