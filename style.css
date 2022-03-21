@@ -55,13 +55,14 @@
 }
 
 h1 {
-  font-family: "chinchan";
-  font-size: 32px;
-  text-align: center;
-  color: #7d191b;
-  padding: 20px 20px;
-  margin: 20px 40px;
-  font-weight: 900;
+    font-family: "chinchan";
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+    color: #7D191B;
+    padding: 20px 20px;
+    margin: 20px 40px;
+    font-weight: 900;
 }
 
 body {
@@ -166,6 +167,51 @@ footer {
   text-decoration: none;
 }
 
+.navlogo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+  }
+  
+  #logoburger {
+    width: 60px;
+    height: 60px;
+    margin-right: 4%;
+  }
+  
+  #logojapan {
+    width: 90px;
+    height: 90px;
+    margin-left: 4%;
+  }
+  
+  .navlogo2 {
+    display: flex;
+    justify-content: flex-end;
+    padding: 15px;
+  }
+  
+  #logoburger2 {
+    width: 15%;
+    height: 13%;
+    margin: 2%;
+  }
+  
+  .menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 2.6em;
+    padding-top: 18%;
+    padding-bottom: 10%;
+    font-family: "popins", sans-serif;
+  }
+  
+  .container2 {
+    background-color: A9C3D6;
+  }
 @media screen and (min-width: 768px) {
 
 .categoriefooter {
