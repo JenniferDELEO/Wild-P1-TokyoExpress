@@ -14,19 +14,18 @@
     <header>
         <nav class ="navlogo">
             <img src="assets/logojapan.png" alt="Logo japan" id="logojapan"/>
-            <img src="assets/logoburger.png" alt="Logo burger" id="logoburger"/>
+            <a href="Menu.html"><img src="assets/logoburger.png" alt="Logo burger"id="logoburger"/></a>
         </nav>
     </header>
 
     <h1>Préparation au voyage</h1>
 
-    <div class ="container">
     <div class = "title" id = "beforeleaving">
-     <h>Avant de partir, il te faut connaître quelques formalités administratives...</h>
+     <h2>Avant de partir au « pays du soleil levant », il te faut connaître quelques formalités administratives...</h2>
     </div>
 
         
-    <img src = "assets/carte.jpeg" alt ="carte" class ="img" width = 100%/>
+    <img src = "assets/carte.jpeg" alt ="carte" class ="img"/>
 
 
     <div class="texte" id ="admin"> 
@@ -38,7 +37,7 @@
             Aussi, à l’arrivée au Japon, à l’Immigration, on va prendre tes empreintes digitales et une photo.</p>
         </div>
 
-            <img src = "assets/yen.jpeg" alt = "yen" class = "img" width=100% />
+            <img src = "assets/yen.jpeg" alt = "yen" class = "img"/>
 
     <div class="texte" id ="yen" >
         <h2>💸 Budget moyen :</h2>
@@ -46,23 +45,31 @@
                 <p> Le billet d'avion : à partir de 800€ pour un direct
                 L'hébergement : 200€ la semaine en dortoirs, à partir de 400€ pour être mieux installé
                 Le transport : peu si vous ne bougez pas beaucoup, sinon prendre un Pass
-                La nourriture : 30€ / jour au minimum.<br>
+                La nourriture : 30€ / jour au minimum.</p><br>
                 
         <h2>💴 Monnaie locale :</h2>
 
-                <p> Au Japon, la devise en vigueur est le yen (¥) <br>
-                
-                (dynamic : 1  €uro = 129,42 Yen)
-                
-                Tu peux changer des devises en France ou sur place (bureaux de change sont ouvertes tous les jours sur place) ou auprès de ta banque.
-                </p>
-    </div>
+                <p> Au Japon, la devise en vigueur est le yen (¥). <br>
+                Tu peux changer des devises en France ou sur place (bureaux de change sont ouvertes tous les jours sur place) ou auprès de ta banque.</p>
+            </div>
+                <div onLoad='ConvertirEnYen()'>
+                    <div id = "converter">
+                        <p> Convertisseur EUROS en YEN </p>
+                        <br>
+                        <Form Name ='form-yen' action ='convertisseur.html'>
+                        Euros € <input type ='text' Name ='euros' onKeyUp ='ConvertirEnYen()' Value='1'>
+                        Yen ¥ <input type ='text' Name ='yen' onKeyUp='ConvertirEnEuros()'>
+                        </Form>
+                    </div>
+                </div>
 
-    <img src = "assets/seaside.jpg" alt = "seaside" class = "img" width=100%/>
+
+
+    <img src = "assets/seaside.jpg" alt = "seaside" class = "img"/>
 
     <div class="texte" id ="tips">
             
-            <h2>Autres infos utiles :</h2>
+            <h2>ℹ️ Autres infos utiles :</h2>
             
                 <p> Meilleures saisons : le printemps , pour les couleurs (éclosion des fleurs de cerisiers) ou l’automne, saison agréable pour sa douceur et les couleurs des arbres. <br>
                     
@@ -73,23 +80,20 @@
                     + 8h en hiver</p>
      </div>        
 
-            <div class="container2" id="check-list">
 
-                <div class="texte">
-                
-                    <h3>Check-list: <span> à mettre dans ta valise (ou ton backpack d'aventurier)</span></h3>
-                <div id = "todolist">
-                        <p>
-                ✅  ton passeport et portefeuille
-            </p><p>
-                ✅  ton appareil photo 
-            </p><p>
-                ✅  un adaptateur de prise 
-            </p><p>
-                ✅  de bonnes baskets <br> ( n’oublie pas superficie de Tokyo est de 2 188 km²!) 
-            </p></div>
+            <section class = "todo-list">
+                <div class = "todo-container">
+                    <h3> ✅ Check-list: <br> <span> à mettre dans ta valise (ou ton backpack d'aventurier)</span></h3>
+                        <input type=checkbox id="completed" value="coding" checked>
+                        <label for="completed"> ton passeport et portefeuille </label><br>
+                        <input type=checkbox id="completed" value="coding" checked> 
+                        <label for="completed"> ton appareil photo </label><br>
+                        <input type=checkbox id="completed" value="coding" checked> 
+                        <label for="completed"> un adaptateur de prise </label><br>
+                        <input type=checkbox id="completed" value="coding" checked>
+                        <label for="completed"> de bonnes baskets <br> (n’oublie pas la superficie de Tokyo est de 2 188 km²!) </label><br>
             </div>
-        </div>
+        </section>
             
             <div>
 <footer>
@@ -103,7 +107,7 @@
       </div>
       <div class="arrowjapan">
         <a href="#" class="btn btn-default"><img class="arrow" src="assets/fleche.png" alt="fleche"></a>
-        <a href="#" class="btn btn-default"><img class="logojapan" src="assets/logojapan.png" alt="logo japan"></a>
+        <a href="homepage.html" class="btn btn-default"><img class="logojapan" src="assets/logojapan.png" alt="logo japan"></a>
       </div>
       </div>
   
@@ -122,6 +126,8 @@
           <p>2022 Tokyo Express. Tous droits réservés</p>
         </div>
     </footer>
+
+<script src="prepa.js"></script>
 
 </body>
 

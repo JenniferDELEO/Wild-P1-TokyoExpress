@@ -1,22 +1,32 @@
 .photo-lieu1 {
   width: 100%;
   padding: 0;
+  border-radius: 10px;
 }
 
 .content {
   background-color: #a9c3d6;
 }
 
+.corpstexte {
+  padding: 32px;
+}
+
 .commentaire {
   margin-top: 20px;
   margin-bottom: 30px;
-  margin: 20px;
+  margin: 12px;
+}
+
+#leavecom {
+  padding: 0px 23px;
 }
 
 textarea {
   height: 100px;
   margin: 20px;
   width: 90%;
+  border-radius: 10px;
 }
 
 .fa-star {
@@ -47,46 +57,71 @@ textarea {
   color: gray;
 }
 
-.navlogo {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px;
+
+@media screen and (min-width: 768px) {
+
+.corpstexte, .corpstexte2, .menuResto {
+  font-size: 125%;
+  text-align: justify;
 }
 
-#logoburger {
-  width: 15%;
-  height: 13%;
+
 }
 
-#logojapan {
-  width: 24%;
-  height: 18%;
-  margin-left: 2%;
+@media screen and (min-width: 768px) {
+  h1 { 
+      font-size: 300%;
+      width: 100%;
+      padding: 0 auto;
+  }
+
+body {
+  margin: 0 auto;
 }
 
-.navlogo2 {
-  display: flex;
-  justify-content: flex-end;
-  padding: 15px;
+.main {
+  width: 70%;
+  margin: 0 auto;
 }
 
-#logoburger2 {
-  width: 15%;
-  height: 13%;
-  margin: 2%;
-}
-
-.menu {
+.categoriefooter {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 3.5rem;
-  padding-top: 20%;
-  padding-bottom: 20%;
+  padding : 0px 12px;
+
 }
 
-.container2 {
-  background-color: A9C3D6;
+.reseaux {
+  display: flex;
+  justify-content: flex-start;
 }
+.insta {
+  margin: 0px 10px;
+}
+
+.twitter {
+  margin: 0px 10px;
+}
+
+.fb {
+  margin: 0px 10px;
+}
+
+.linkedin {
+  margin: 0px 10px;
+}
+
+.github {
+  margin: 0px 10px;
+}
+
+.logojapan {
+  margin: 0px 20px;
+}
+
+.arrow {
+  margin-right: 10px;
+}
+
+}
+
