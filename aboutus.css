@@ -23,12 +23,17 @@ h2{
     margin:1rem;
 }
 
+textArea{
+    width:50%;
+    margin-left:25%; 
+}
+
 #sendButton{
     cursor: pointer;
 }
 
 input{
-    margin-top:0.2rem;
+    margin-bottom: 1rem;
 }
 
 #aboutUsCardsContainer{
