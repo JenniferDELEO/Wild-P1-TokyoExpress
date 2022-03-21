@@ -4,16 +4,224 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="listspage.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin=""
+    />
     <title>Bonnes adresses</title>
   </head>
   <body>
     <header>
+      <nav class="navlogo">
+      <img src="assets/logojapan.png" alt="Logo japan" id="logojapan" />
+      <a href="Menu.html"><img src="assets/logoburger.png" alt="Logo burger"id="logoburger"/></a>
+    </nav>
+    <section class="navdesktop">
+      <div id = "upNav">
+      <a href="./homepage.html"><img src="assets/logojapan.png" alt="Logo japan" id="homeNav" /></a>
+      <h1>Tokyo Express</h1>
+      </div>
+      <ul>
+        <li><a href="./preparation.html" id="prepNav">Préparation au voyage</a></li>
+        <li><a href="./listspage.html"id="placesNav">Adresses</a></li>
+        <li><a href="./aboutus.html" id="aboutNav">A propos</a></li>
+      </ul>
+    </section>
+    <header>
       <h1>Les bonnes adresses</h1>
     </header>
-    <h2 id="lieux">Lieux à visiter<button></button></h2>
-    <h2 id="hotel">Hotel<button></button></h2>
-    <h2 id="restaurant">Restaurant<button></button></h2>
-    <img src="./assets/Carte Tokyo.png" alt="Carte Tokyo" width="100%" />
+    <main>
+      <h2 id="placesTitle">Lieux à visiter<button id="arrow"></button></h2>
+      <section id="places">
+      <a href="./detailspage.html" class="places-box">
+        <img
+          src="./assets/Lieu 1.jpeg"
+          alt="Photo du jardin de Shinjuku"
+          id="garden-photo"
+          class="places-photo"
+        />
+        <h3>Les jardins de Shinjuku</h3>
+        <p>
+          Le jardin de Shinjuku, surnommé "oasis urbaine", est l’un des parcs
+          les plus importants de la capitale...
+        </p>
+      </a>
+      <a href="./lieux2.html" class="places-box">
+        <img
+          src="./assets/Photo senso ji.jpg"
+          alt="Photo de Senso Ji"
+          id="senso-ji-photo"
+          class="places-photo"
+        />
+        <h3>Sensõ-Ji</h3>
+        <p>
+          Le Sensō-ji est un temple bouddhiste situé à Tokyo, dans le quartier
+          d'Asakusa...
+        </p>
+      </a>
+      <a href="./lieux3.html" class="places-box">
+        <img
+          src="./assets/Photo la tour Skytree.jpg"
+          alt="Photo de la Tokyo Skytree"
+          id="skytree-photo"
+          class="places-photo"
+        />
+        <h3>Tokyo Skytree</h3>
+        <p>
+          La Tokyo Skytree est une tour de radiodiffusion du Japon, située dans
+          l'arrondissement Sumida de Tokyo....
+        </p>
+      </a>
+    </section>
+    <h2 id="hostelTitle">
+      Hotel
+      <button id="arrow"></button>
+    </h2> 
+    <section id="hostel">
+      <a href="./hotel1.html" class="hostel-box">
+        
+          <img
+            src="./assets/Photo hotel 1.jpg"
+            alt="Photo Hotel Sunroute Plaza Shinjuku"
+            id="hostel1-photo"
+            class="hostel-photo"
+          />
+          <div class="hostel-text">
+            <h3>Hotel Sunroute Plaza Shinjuku</h3>
+            <p><strong>Arrondissement de Shibuya</strong></p>
+            <p>
+            Situé dans le centre de Shinjuku, à seulement 4 minutes à pied de la
+            gare de Shinsen-Shinjuku et de la gare JR Shinjuku...
+            </p>
+          </div>
+      </a>
+      <a href="./hotel2.html" class="hostel-box">
+          <img
+            src="./assets/Photo hotel 2 coupée.jpeg"
+            alt="Photo de The Royal Park Hotel Tokyo Haneda"
+            id="hostel2-photo"
+            class="hostel-photo"
+          />
+          <div class="hostel-text" id="hostel2-text">
+            <h3>The Royal Park Hotel Tokyo Haneda</h3>
+            <p><strong>Arrondissement d'Ōta</strong></p>
+            <p>
+            Avec son hall situé à côté de l'aéroport Haneda, The Royal Park
+            Hotel Tokyo Haneda...
+            </p>
+        </div>
+      </a>
+      <a href="./hotel3.html" class="hostel-box">
+        <img
+            src="./assets/Photo hotel 3 coupée.jpg"
+            alt="Photo de The Tokyo Station Hotel"
+            id="hostel3-photo"
+            class="hostel-photo"
+         />
+        <div class="hostel-text">
+          <h3>The Tokyo Station Hotel</h3>
+          <p><strong>Arrondissement de Chiyoda</strong></p>
+          <p>
+            Rouvert en 2012 après d’importants travaux de rénovation, le Tokyo
+            Station Hotel est classé « bien culturel d’importance »...
+          </p>
+        </div>
+      </a>
+    </section>
+    <h2 id="restaurantTitle">
+      Restaurant
+      <button id="arrow"></button>
+    </h2>
+    <section id="restaurant">
+      <a href="./resto1.html" class="restaurant-box">
+        <img
+          src="./assets/Photo Restaurant 1 coupée.jpg"
+          alt="Photo de Sushizanmai Main Branch"
+          id="restaurant1-photo"
+          class="restaurant-photo"
+        />
+        <div class="restaurant-text">
+          <h3>Sushizanmai Main Branch</h3>
+          <p><strong>Restaurant de Sushi</strong></p>
+          <p><em> Notre avis :</em> Excellent rapport qualité-prix...</p>
+        </div>
+      </a>
+      <a href="./resto2.html" class="restaurant-box">
+        <img
+          src="./assets/Photo Restaurant 2 coupée.jpg"
+          alt="Photo de Nabezo Shibuya Koen Dori"
+          id="restaurant2-photo"
+          class="restaurant-photo"
+        />
+        <div class="restaurant-text" id="restaurant2-text">
+          <h3>Nabezo Shibuya Koen Dori</h3>
+          <p><strong>Restaurant de Sukiyaki et Shabu-Shabu</strong></p>
+          <p>
+          <em> Notre avis :</em> Endroit raffiné et sympathique pour goûter du
+            shabu shabu à volonté...
+          </p>
+        </div>
+      </a>
+      <a href="./resto3.html" class="restaurant-box">
+        <img
+          src="./assets/Photo Restaurant 3 coupée.jpg"
+          alt="Photo de Gyukatsu Motomura Harajuku"
+          id="restaurant3-photo"
+          class="restaurant-photo" 
+        />
+        <div class="restaurant-text">
+          <h3>Gyukatsu Motomura Harajuku</h3>
+          <p><strong>Restaurant traditionnel japonais</strong></p>
+          <p>
+          <em>Notre avis : </em>Fantastique. Délicieux. Incroyable...</p>
+        </div>
+      </a>
+    </section>
+    <section id="carte">
+      <h2>Carte interactive <button id="arrow"></button></h2>
+      <div id="map"></div></a>
+    </section>
+</main>
+<footer>
+      <div class="logofooter">
+        <div class="reseaux">        
+          <a href="https://www.instagram.com/tokyo.explores/?hl=fr" target="_blank"><img class="insta"  src="assets/insta blanc.png" alt="logo insta"></a>
+          <a href="homepage.html" target="_blank"><img class="twitter" src="assets/twitter blanc.png" alt="logo twitter"></a>
+          <a href="https://github.com/JenniferDELEO/Wild-P1-TokyoExpress.git" target="_blank"><img class="github" src="assets/github blanc.png" alt="logo github"></a>
+          <a href="https://www.facebook.com/GoTokyo.en/" target="_blank"><img class="fb" src="assets/fb blanc.png" alt="logo facebook"></a>
+          <a href="https://www.linkedin.com/in/jennifer-de-leo-321432a4/" target="_blank"><img class="linkedin" src="assets/linkedin blanc.png" alt="logo linkedin"></a>
+      </div>
+      <div class="arrowjapan">
+        <a href="#" class="btn btn-default"><img class="arrow" src="assets/fleche.png" alt="fleche"></a>
+        <a href="homepage.html" class="btn btn-default"><img class="logojapan" src="assets/logojapan.png" alt="logo japan"></a>
+      </div>
+      </div>
+  
+
+    <div class="categoriefooter">
+      <a class="accueilfooter" href="homepage.html">Accueil</a>
+      <a class="preparationfooter" href="preparation.html">Préparation au voyage</a>
+      <a class="adressesfooter" href="listspage.html">Adresses</a>
+      <a class="aproposfooter" href="aboutus.html">A propos</a>
+     </div>
+
+  
+  
+        <div class="copyrightfooter">      
+          <img class="copyright" src="assets/copyrigh.png" alt="copyright">
+          <p>2022 Tokyo Express. Tous droits réservés</p>
+        </div>
+    </footer>
+
+    <script
+      src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+      crossorigin=""
+    ></script>
+    <script src="./listspage.js"></script>
   </body>
 </html>

@@ -1,22 +1,127 @@
 .photo-lieu1 {
-    width: 100%;
-    padding: 0;
+  width: 100%;
+  padding: 0;
+  border-radius: 10px;
 }
 
 .content {
-    background-color: #A9C3D6;
+  background-color: #a9c3d6;
+}
 
+.corpstexte {
+  padding: 32px;
 }
 
 .commentaire {
-    margin-top: 20px;
-    margin-bottom: 30px;
-    margin: 20px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  margin: 12px;
+}
+
+#leavecom {
+  padding: 0px 23px;
 }
 
 textarea {
-    height: 100px;
-    margin: 20px;
+  height: 100px;
+  margin: 20px;
   width: 90%;
+  border-radius: 10px;
+}
+
+.fa-star {
+  color: gray;
+  cursor: pointer;
+  padding: 0.0625rem;
+}
+.fa-star.gold {
+  color: #ffdc0f;
+}
+
+.rating {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 50%;
+}
+.stars {
+  display: inline-flex;
+  justify-content: center;
+  font-size: 3em;
+}
+
+.stars:hover .fa-star {
+  color: #ffdc0f;
+}
+.stars .fa-star:hover ~ .fa-star {
+  color: gray;
+}
+
+
+@media screen and (min-width: 768px) {
+
+.corpstexte, .corpstexte2, .menuResto {
+  font-size: 125%;
+  text-align: justify;
+}
+
 
 }
+
+@media screen and (min-width: 768px) {
+  h1 { 
+      font-size: 300%;
+      width: 100%;
+      padding: 0 auto;
+  }
+
+body {
+  margin: 0 auto;
+}
+
+.main {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.categoriefooter {
+  display: flex;
+  flex-direction: column;
+  padding : 0px 12px;
+
+}
+
+.reseaux {
+  display: flex;
+  justify-content: flex-start;
+}
+.insta {
+  margin: 0px 10px;
+}
+
+.twitter {
+  margin: 0px 10px;
+}
+
+.fb {
+  margin: 0px 10px;
+}
+
+.linkedin {
+  margin: 0px 10px;
+}
+
+.github {
+  margin: 0px 10px;
+}
+
+.logojapan {
+  margin: 0px 20px;
+}
+
+.arrow {
+  margin-right: 10px;
+}
+
+}
+
