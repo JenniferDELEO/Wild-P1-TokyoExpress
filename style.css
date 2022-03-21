@@ -167,16 +167,6 @@ footer {
 }
 
 @media screen and (min-width: 768px) {
-  h1 { 
-      font-size: 300%;
-      width: 100%;
-      padding: 0 auto;
-  }
-
-body {
-  margin: 0 auto;
-  width: 60%;
-}
 
 .categoriefooter {
   display: flex;
