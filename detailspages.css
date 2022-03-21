@@ -1,6 +1,7 @@
 .photo-lieu1 {
   width: 100%;
   padding: 0;
+  border-radius: 10px;
 }
 
 .content {
@@ -25,6 +26,7 @@ textarea {
   height: 100px;
   margin: 20px;
   width: 90%;
+  border-radius: 10px;
 }
 
 .fa-star {
@@ -55,4 +57,71 @@ textarea {
   color: gray;
 }
 
+
+@media screen and (min-width: 768px) {
+
+.corpstexte, .corpstexte2, .menuResto {
+  font-size: 125%;
+  text-align: justify;
+}
+
+
+}
+
+@media screen and (min-width: 768px) {
+  h1 { 
+      font-size: 300%;
+      width: 100%;
+      padding: 0 auto;
+  }
+
+body {
+  margin: 0 auto;
+}
+
+.main {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.categoriefooter {
+  display: flex;
+  flex-direction: column;
+  padding : 0px 12px;
+
+}
+
+.reseaux {
+  display: flex;
+  justify-content: flex-start;
+}
+.insta {
+  margin: 0px 10px;
+}
+
+.twitter {
+  margin: 0px 10px;
+}
+
+.fb {
+  margin: 0px 10px;
+}
+
+.linkedin {
+  margin: 0px 10px;
+}
+
+.github {
+  margin: 0px 10px;
+}
+
+.logojapan {
+  margin: 0px 20px;
+}
+
+.arrow {
+  margin-right: 10px;
+}
+
+}
 
