@@ -4,7 +4,6 @@
     box-sizing: border-box;
 }
 
-
 h2{
     font-size: 1.2em;
     text-align: center;
@@ -24,9 +23,8 @@ h2{
     margin:1rem;
 }
 
-label{
-    padding-top:1rem;
-    padding-bottom:4rem;
+#sendButton{
+    cursor: pointer;
 }
 
 input{
