@@ -1,6 +1,7 @@
 .photo-lieu1 {
   width: 100%;
   padding: 0;
+  border-radius: 10px;
 }
 
 .content {
@@ -25,6 +26,7 @@ textarea {
   height: 100px;
   margin: 20px;
   width: 90%;
+  border-radius: 10px;
 }
 
 .fa-star {
