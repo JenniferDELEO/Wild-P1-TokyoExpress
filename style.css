@@ -169,6 +169,7 @@ footer {
 @media screen and (min-width: 768px) {
 
 .categoriefooter {
+  margin: 0;
   display: flex;
   flex-direction: column;
   padding : 0px 12px;

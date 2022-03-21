@@ -75,13 +75,18 @@ textarea {
 
 body {
   margin: 0 auto;
-  width: 60%;
+}
+
+.main {
+  width: 70%;
+  margin: 0 auto;
 }
 
 .categoriefooter {
   display: flex;
   flex-direction: column;
   padding : 0px 12px;
+
 }
 
 .reseaux {
