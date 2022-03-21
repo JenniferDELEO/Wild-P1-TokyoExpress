@@ -20,9 +20,8 @@
 
     <h1>Préparation au voyage</h1>
 
-    <div class ="container">
     <div class = "title" id = "beforeleaving">
-     <h>Avant de part au « pays du soleil levant », il te faut connaître quelques formalités administratives...</h>
+     <h2>Avant de partir au « pays du soleil levant », il te faut connaître quelques formalités administratives...</h2>
     </div>
 
         
@@ -46,24 +45,25 @@
                 <p> Le billet d'avion : à partir de 800€ pour un direct
                 L'hébergement : 200€ la semaine en dortoirs, à partir de 400€ pour être mieux installé
                 Le transport : peu si vous ne bougez pas beaucoup, sinon prendre un Pass
-                La nourriture : 30€ / jour au minimum.<br>
+                La nourriture : 30€ / jour au minimum.</p><br>
                 
         <h2>💴 Monnaie locale :</h2>
 
-                <p> Au Japon, la devise en vigueur est le yen (¥) <br>
-                <p>Tu peux changer des devises en France ou sur place (bureaux de change sont ouvertes tous les jours sur place) ou auprès de ta banque.</p>
-                
+                <p> Au Japon, la devise en vigueur est le yen (¥). <br>
+                Tu peux changer des devises en France ou sur place (bureaux de change sont ouvertes tous les jours sur place) ou auprès de ta banque.</p>
+            </div>
+                <div onLoad='ConvertirEnYen()'>
                     <div id = "converter">
                         <p> Convertisseur EUROS en YEN </p>
                         <br>
-                        <FORM Name='Form1'>
-                        Euros <input type='text' Name='euros'>
-                        Yen <input type ='text' Name='yen'>
-                        </FORM>
-                        </div>
+                        <Form Name ='form-yen' action ='convertisseur.html'>
+                        Euros € <input type ='text' Name ='euros' onKeyUp ='ConvertirEnYen()' Value='1'>
+                        Yen ¥ <input type ='text' Name ='yen' onKeyUp='ConvertirEnEuros()'>
+                        </Form>
+                    </div>
+                </div>
 
-                
-    </div>
+
 
     <img src = "assets/seaside.jpg" alt = "seaside" class = "img"/>
 
@@ -92,7 +92,6 @@
                         <label for="completed"> un adaptateur de prise </label><br>
                         <input type=checkbox id="completed" value="coding" checked>
                         <label for="completed"> de bonnes baskets <br> (n’oublie pas la superficie de Tokyo est de 2 188 km²!) </label><br>
-                    
             </div>
         </section>
             

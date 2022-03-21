@@ -1,21 +1,3 @@
-.navlogo {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px;
-}
-
-#logoburger {
-    width : 15%;
-    height: 13%;
-}
-
-#logojapan {
-    width : 24%;
-    height: 18%;
-    margin-left: 2%;
-}
-
 h2 {
     font-size: 1.2em;
     font-weight:normal;
@@ -36,10 +18,11 @@ h2 {
 .img {
     margin: 4% 0;
     width: 100%;
+    border-radius: 3%;
 }
 
 form {
-    display: flex;
+  display: flex;
     justify-content: space-evenly;
 }
 
@@ -51,42 +34,13 @@ form {
     background-color: rgba(169,195,214,0.30000001192092896);
 }
 
-@media screen and (min-width: 1024px) and (orientation: landscape) {
-.img {
-    margin : auto;
-    width: 80%;
-    height: 20%;
-    display: flex;
-    justify-content: center;
-}
-.texte {
-    font-size: 1.3em;
-    margin: 0% 10%;
-    justify-content: center;
-}
-h2 {
-    font-size: 1.3em;
-}
-#beforeleaving {
-    font-size: 1.3em;
-}
-
-.title {
-    display: flex; 
-    justify-content: center;
-    font-size: 1.3em;
-}
-.todo-container {
-    font-size: 1.3em;
-}
-}
-
 .todo-container {
     background-color: rgba(169,195,214,0.30000001192092896);
-    padding: 5% 5%;
+    padding: 5%;
     margin: 10% 20%;
     border-radius: 4%; 
     text-align: center;
+    box-shadow: 0px 0px 15px 0px #635d5d;
 }
 
 
@@ -108,29 +62,6 @@ span {
 }
 
 
-.navlogo2 {
-    display: flex;
-    justify-content: flex-end;
-    padding: 15px; 
-    margin : 2%;
-}
-
-#logoburger2 {
-    width : 15%;
-    height: 13%;
-}
-
-.menu {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    font-size: 2.6em;
-    padding-top: 18%;
-    padding-bottom: 10%;
-    font-family: "popins", sans-serif;
-}
-
 ul {
     list-style-type: none;
   }
@@ -143,13 +74,47 @@ a {
 a:hover {
     color: #e9e9e9;
     font-size: 1.2em;
-  }
+  }  
 
 input {
     cursor: pointer;
 }
 
 
+@media screen and (min-width: 1024px) {
+    .img {
+        margin : 0% 10%;
+        width: 80%;
+        height: 20%;
+        display: flex;
+        justify-content: center;
+    }
+    .texte {
+        font-size: 1.3em;
+        margin: 0% 10%;
+        justify-content: center;
+    }
+    h2 {
+        font-size: 1.3em;
+    }
+    #beforeleaving {
+        font-size: 1.3em;
+    }
+    
+    .title {
+        display: flex; 
+        justify-content: center;
+        font-size: 1.3em;
+    }
+    .todo-container {
+        font-size: 1.3em;
+        margin: 8% 30%;
+        padding: 2%;
+    }
+    #converter {
+        margin : 5% 10%;
+    }
+    }
 
 
 
