@@ -5,33 +5,34 @@
 }
 
 @font-face {
-  font-family: "chinchan";
-  src: url("assets/ChinChan.ttf") format("truetype");
+  font-family: 'chinchan';
+  src: url('assets/ChinChan.ttf') format('truetype');
 }
 
 h1 {
-  font-family: "chinchan";
-  font-size: 24px;
+  font-family: 'chinchan';
+  font-size: 35px;
   text-align: center;
   color: #7d191b;
   padding: 20px 20px;
-  margin: 20px 40px;
+  margin: 20px 20px;
   font-weight: 900;
 }
 
 body {
   background-color: rgba(218, 226, 228, 0.25);
-  font-family: "Cabin";
+  font-family: 'Cabin';
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   color: #2c2c2e;
 }
 
-.corpstexte, .corpstexte2, .menuResto {
-   padding: 10px 10px;
+.corpstexte,
+.corpstexte2,
+.menuResto {
+  padding: 10px 10px;
 }
-
 
 footer {
   width: 100%;
@@ -110,7 +111,7 @@ footer {
   color: #2c2c2e;
   font-size: 1em;
 }
- .categoriefooter a:visited {
+.categoriefooter a:visited {
   color: #2c2c2e;
   font-size: 1em;
 }
