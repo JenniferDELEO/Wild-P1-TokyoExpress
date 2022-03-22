@@ -57,19 +57,19 @@ textarea {
   color: gray;
 }
 
+.rating {
+  margin-bottom: 15px;
+}
 
-@media screen and (min-width: 768px) {
+
+@media screen and (min-width: 1024px) {
 
 .corpstexte, .corpstexte2, .menuResto {
   font-size: 125%;
   text-align: justify;
 }
 
-
-}
-
-@media screen and (min-width: 768px) {
-  h1 { 
+h1 { 
       font-size: 300%;
       width: 100%;
       padding: 0 auto;
@@ -80,7 +80,7 @@ body {
 }
 
 .main {
-  width: 70%;
+  width: 60%;
   margin: 0 auto;
 }
 
