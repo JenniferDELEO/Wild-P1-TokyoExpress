@@ -36,42 +36,32 @@
   transition: background 0.3s ease-in-out;
 }
 
-/* ............/navbar/............ *
+/* ............/navbar/............ */
 
-/* desktop ............/// */
+.logo {
+  width: 50px;
+}
 
 .navbar input,
 .navbar .hamburger-lines {
-  display: none;
   color: #7d191b;
 }
 
-.navbar {
-  box-shadow: 0px 5px 10px 0px #aaa;
-  position: fixed;
-  width: 100%;
-  background: #dae2e4;
-  color: #000;
-  opacity: 0.85;
-  height: 50px;
-  z-index: 12;
+input {
+  opacity: 0;
 }
-
 .navbar-container {
+  width: 80%;
+  margin: auto;
   display: flex;
-  height: 64px;
   align-items: center;
-}
-.menu-items {
-  order: 2;
-  display: flex;
+  justify-content: space-between;
 }
 
 .menu-items li {
+  display: inline-block;
   list-style: none;
-  margin-left: 1.5rem;
-  margin-bottom: 0.5rem;
-  font-size: 1.2rem;
+  margin: 10px 20px;
 }
 
 .menu-items a {
@@ -86,8 +76,9 @@
   transition: color 0.3s ease-in-out;
 }
 
-.logo {
-  height: 65px;
+#icon {
+  width: 25px;
+  cursor: pointer;
 }
 
 /* ............//// Showcase ////......... */
@@ -136,18 +127,12 @@
   flex-wrap: wrap;
 }
 
-#tokyo h2 {
-  font-size: 2.3rem;
-}
-
 #tokyo p {
   font-size: 1.2rem;
-  color: #555;
 }
 
 #tokyo .small {
-  font-size: 1.2rem;
-  color: #666;
+  font-size: 3rem;
   font-weight: 600;
 }
 
@@ -275,8 +260,12 @@
 /* ......../ media query /.......... */
 
 @media (max-width: 768px) {
+  #icon {
+    display: none;
+  }
+
   .navbar {
-    opacity: 0.95;
+    opacity: 1;
   }
 
   .navbar-container input[type='checkbox'],
@@ -299,6 +288,7 @@
     left: 20px;
     z-index: 5;
     opacity: 0;
+    cursor: pointer;
   }
 
   .navbar-container .hamburger-lines {
@@ -340,7 +330,7 @@
     padding-top: 100px;
     background: #dae2e4;
     height: 100vh;
-    max-width: 300px;
+    max-width: 400px;
     transform: translate(-150%);
     display: flex;
     flex-direction: column;
@@ -358,9 +348,8 @@
 
   .logo {
     position: absolute;
-    top: 5px;
     right: 15px;
-    font-size: 2rem;
+    width: 50px;
   }
 
   .navbar-container input[type='checkbox']:checked ~ .menu-items {
@@ -429,12 +418,6 @@
   .contact-img {
     width: 90%;
     margin: 3rem auto;
-  }
-
-  .logo {
-    position: absolute;
-    top: 06px;
-    font-size: 3rem;
   }
 
   .navbar .menu-items li {
