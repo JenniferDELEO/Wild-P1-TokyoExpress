@@ -264,6 +264,7 @@ footer {
     font-weight: bold;
     font-size: 1.2em;
     cursor: pointer;
+    text-decoration: none;
   }
 
   h1 {
