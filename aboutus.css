@@ -14,6 +14,7 @@ h2{
     background-color: rgba(169, 195, 214, 0.3);
     padding:1rem;
     margin:1rem;
+    text-align: justify;
 }
 
 #contactFormAboutus{
@@ -28,7 +29,7 @@ textArea{
     margin-left:25%; 
 }
 
-#sendButton{
+#submitButton{
     cursor: pointer;
 }
 
