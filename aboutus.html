@@ -9,7 +9,29 @@
     <link href="style.css" rel="stylesheet" type="text/css" />
     <link href="aboutus.css" rel="stylesheet" type="text/css" />
 
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init('V1Nmube5zUoNmMGEV');
+        })();
+    </script>
 
+    <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+                // generate a five digit number for the contact_number variable
+                this.contact_number.value = Math.random() * 100000 | 0;
+                // these IDs from the previous steps
+                emailjs.sendForm('contact_service', 'contact_form', this)
+                    .then(function() {
+                        console.log('SUCCESS!');
+                    }, function(error) {
+                        console.log('FAILED...', error);
+                    });
+            });
+        }
+    </script>
 
 
 
@@ -40,6 +62,7 @@
 </header>
 
 
+
     <form id="contact-form">
       <h2> TEST DE EMAIL.HS</h2>
         <input type="hidden" name="contact_number">
@@ -54,25 +77,21 @@
 
 
 
-
-
-
 <main>
-    <h1 id="aboutUsh1">A propos de nous</h1>
+    <h1>A propos</h1>
+
+    <h2>Présentation :</h2>
 
     <div id="aboutUsIntro">
-      <p>
-        Ce petit site a été réalisé pour notre premier projet à la Wild Code
-        School. <br>Après deux semaines de formation initiale, et durant 2 semaines
-        du 14/03/2022 au 25/03/2022, notre équipe de 5 a :<br />
-        - tout d'abord réalisé un maquettage papier<br />
+      <p>Ce petit site a été réalisé pour notre premier projet à la <a target="_blank" href="https://www.wildcodeschool.com/fr-FR/campus/lyon/">Wild Code School de Lyon</a>.<br>
+        Après deux semaines de formation initiale, et durant 2 semaines du 14/03/2022 au 25/03/2022, notre équipe de 5 étudiants a :<br />
+        - réalisé un maquettage papier<br />
         - puis un prototypage sur Figma<br />
-        - et travaillé en équipe via GitHub.
-      </p>
+        - et travaillé en équipe via GitHub.</p>
     </div>
 
     <div id="aboutUscontact">
-      <h2>Contactez-nous :</h2>
+      <h2>Contacte-nous :</h2>
       
       <form id="contactFormAboutus">
 
@@ -89,6 +108,23 @@
 
       </form>
     </div>
+
+    
+    <form id="contact-form">
+      <h2> TEST DE EMAIL.JS</h2>
+      <p>Réessayer une fois le site mis en ligne sur Netify (pour l'instant erreur cf console)</p>
+        <input type="hidden" name="contact_number">
+        <label>Name</label>
+        <input type="text" name="user_name">
+        <label>Email</label>
+        <input type="email" name="user_email">
+        <label>Message</label>
+        <textarea name="message"></textarea>
+        <input type="submit" value="Send">
+    </form>
+
+
+
 
 
     <div id="theTeam">  
@@ -125,7 +161,7 @@
                 <p class="cardName"> Gaspard</p>
             </div>
 
-        </div>
+          </div>
         </div>
         
         
@@ -180,31 +216,6 @@
 
 
     <script src="aboutus.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-    <script type="text/javascript">
-        (function() {
-            emailjs.init('V1Nmube5zUoNmMGEV');
-        })();
-    </script>
-
-    <script type="text/javascript">
-        window.onload = function() {
-            document.getElementById('contact-form').addEventListener('submit', function(event) {
-                event.preventDefault();
-                // generate a five digit number for the contact_number variable
-                this.contact_number.value = Math.random() * 100000 | 0;
-                // these IDs from the previous steps
-                emailjs.sendForm('contact_service', 'contact_form', this)
-                    .then(function() {
-                        console.log('SUCCESS!');
-                    }, function(error) {
-                        console.log('FAILED...', error);
-                    });
-            });
-        }
-    </script>
-
-
 
   </body>
 </html>
