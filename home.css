@@ -64,6 +64,10 @@ input {
   margin: 10px 20px;
 }
 
+i {
+  padding: 10px;
+}
+
 .menu-items a {
   text-decoration: none;
   color: #444;
@@ -79,6 +83,12 @@ input {
 #icon {
   width: 25px;
   cursor: pointer;
+  color: #444;
+}
+
+nav ul {
+  flex: 1;
+  text-align: right;
 }
 
 /* ............//// Showcase ////......... */
@@ -129,6 +139,7 @@ input {
 
 #tokyo p {
   font-size: 1.2rem;
+  text-align: justify;
 }
 
 #tokyo .small {
@@ -138,7 +149,7 @@ input {
 
 .tokyo-img {
   flex: 1 1 400px;
-  padding: 30px;
+  padding: 24px;
   transform: translateX(150%);
   animation: about-img-animation 1s ease-in-out forwards;
 }
@@ -151,7 +162,7 @@ input {
 
 .tokyo-text {
   flex: 1 1 400px;
-  padding: 30px;
+  padding: 24px;
   margin: auto;
   transform: translate(-150%);
   animation: about-text-animation 1s ease-in-out forwards;
@@ -259,7 +270,14 @@ input {
 
 /* ......../ media query /.......... */
 
-@media (max-width: 768px) {
+@media (max-width: 894px) {
+  .logo {
+    position: absolute;
+    width: 60px;
+    right: 15px;
+    top: 6px;
+  }
+
   #icon {
     display: none;
   }
@@ -282,22 +300,20 @@ input {
   .navbar-container input[type='checkbox'] {
     position: absolute;
     display: block;
-    height: 32px;
-    width: 30px;
-    top: 20px;
-    left: 20px;
+    height: 40px;
+    width: 40px;
+    top: 16px;
     z-index: 5;
     opacity: 0;
     cursor: pointer;
   }
 
   .navbar-container .hamburger-lines {
-    display: block;
-    height: 23px;
+    display: flex;
+    height: 24px;
     width: 35px;
     position: absolute;
-    top: 17px;
-    left: 20px;
+    top: 24px;
     z-index: 2;
     display: flex;
     flex-direction: column;
@@ -329,12 +345,12 @@ input {
   .navbar .menu-items {
     padding-top: 100px;
     background: #dae2e4;
-    height: 100vh;
+    height: 57vh;
     max-width: 400px;
     transform: translate(-150%);
     display: flex;
     flex-direction: column;
-    margin-left: -40px;
+    margin-left: -80px;
     padding-left: 50px;
     transition: transform 0.5s ease-in-out;
     box-shadow: 5px 0px 10px 0px #aaa;
@@ -346,10 +362,8 @@ input {
     font-weight: 500;
   }
 
-  .logo {
-    position: absolute;
-    right: 15px;
-    width: 50px;
+  nav ul {
+    text-align: left;
   }
 
   .navbar-container input[type='checkbox']:checked ~ .menu-items {
@@ -403,6 +417,7 @@ input {
 
   .activity-item {
     flex-direction: column;
+    z-index: -99999;
     text-align: center;
   }
 
