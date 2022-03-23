@@ -61,6 +61,24 @@ textarea {
   margin-bottom: 15px;
 }
 
+#sendButton {
+ background-color: #7d191b;
+ border-radius: 15px;
+ padding: 20px;
+ color: #ffff;
+ margin: 20px;
+ width: 5 px;
+ cursor: pointer;
+}
+
+#sendButton:hover {
+  background-color :#ffff;
+  color :#7d191b;
+}
+
+textarea {
+  padding: 10px;
+}
 
 @media screen and (min-width: 1024px) {
 
