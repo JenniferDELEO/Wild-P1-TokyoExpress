@@ -191,45 +191,44 @@ footer {
   }
 }
 
-  .categoriefooter {
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    padding: 0px 12px;
-  }
+.categoriefooter {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 0px 12px;
+}
 
-  .reseaux {
-    display: flex;
-    justify-content: flex-start;
-  }
-  .insta {
-    margin: 0px 10px;
-  }
+.reseaux {
+  display: flex;
+  justify-content: flex-start;
+}
+.insta {
+  margin: 0px 10px;
+}
 
-  .twitter {
-    margin: 0px 10px;
-  }
+.twitter {
+  margin: 0px 10px;
+}
 
-  .fb {
-    margin: 0px 10px;
-  }
+.fb {
+  margin: 0px 10px;
+}
 
-  .linkedin {
-    margin: 0px 10px;
-  }
+.linkedin {
+  margin: 0px 10px;
+}
 
-  .github {
-    margin: 0px 10px;
-  }
+.github {
+  margin: 0px 10px;
+}
 
-  .logojapan {
-    margin: 0px 20px;
-  }
+.logojapan {
+  margin: 0px 20px;
+}
 
-  .arrow {
-    margin-right: 10px;
-    position: fixed;
-    bottom: 10%;
-    right: 1%;
-  }
+.arrow {
+  margin-right: 10px;
+  position: fixed;
+  bottom: 10%;
+  right: 1%;
 }
