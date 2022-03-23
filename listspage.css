@@ -156,6 +156,23 @@ img:hover {
   font-size: 1.5em;
 }
 
+.map-list {
+  border: 1px solid #ffffff;
+}
+
+.map-list:hover {
+  background-color: rgb(218, 226, 228);
+  border: 1px solid rgb(218, 226, 228);
+  border-radius: 5px;
+}
+
+.backgroundRed {
+  color: #ffffff;
+  background-color: #7d191b;
+  border: 1px solid rgb(218, 226, 228);
+  border-radius: 5px;
+}
+
 @media screen and (min-width: 1000px) {
   main {
     margin: 0 auto;
@@ -248,18 +265,20 @@ img:hover {
     box-shadow: none;
     margin-bottom: 0;
     height: 55vh;
-    width: 200px;
+    width: 250px;
     overflow: scroll;
   }
 
   #map-container h5 {
     color: #7d191b;
     font-size: 1.2em;
-    font-weight: 100;
+    font-weight: 250;
     font-style: italic;
+    margin-bottom: 24px;
+    margin-top: 16px;
   }
 
-  .map-items {
+  #map-items {
     padding: 10px;
   }
 
