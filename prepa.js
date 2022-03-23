@@ -31,11 +31,12 @@ inputValue.addEventListener("input", (e) => {
 
 currentRate.innerText = rate;
 
-const todoList = document.querySelector(".todo-container");
-const checkedBox = 0;
+const todoList = document.querySelectorAll(".completed");
+console.log(todoList);
+
 for (let i = 0; i < todoList.length; i++) {
-  if (todoList[i] >= 4) {
-    alert("Bravo, tu es prêt pour l'aventure ! 🧳 ");
+  if (todoList[i].checked) {
+    console.log("Bravo, tu es prêt pour l'aventure ! 🧳 ");
   }
 }
 

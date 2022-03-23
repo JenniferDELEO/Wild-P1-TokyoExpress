@@ -1,5 +1,4 @@
 h2 {
-<<<<<<< HEAD
   width: 100%;
   background-color: #7d191b;
   border: solid 1px #7d191b;
@@ -8,11 +7,7 @@ h2 {
   border-radius: 5px;
   padding: 8px;
   padding-left: 24px;
-  margin: 24px auto;
-=======
-  font-size: 1.2em;
-  font-weight: normal;
->>>>>>> dev
+  margin: auto;
 }
 
 .title {
@@ -20,38 +15,42 @@ h2 {
 }
 
 .texte {
-  padding: 5%;
+  padding: 3% 5%;
 }
 
-#beforeleaving {
+#beforeleaving :first-child {
   font-size: 1.2em;
+  color: #2c2c2e;
+  text-align: center;
 }
 
 .img {
-  margin: 4% 0;
+  margin: 4% 0%;
   width: 100%;
-  border-radius: 3%;
+  border-radius: 10px;
 }
 
-form {
-  display: flex;
-  justify-content: space-evenly;
-}
-
-#converter {
+.yen-converter {
   font-weight: bold;
-  font-size: larger;
-  padding: 2%;
-  margin-top: 5%;
+  font-size: 1.1em;
+  padding: 3%;
+  margin: 5% 10%;
+  margin-bottom: 8%;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0px 0px 1rem 0px #635d5d;
   background-color: rgba(169, 195, 214, 0.30000001192092896);
 }
-<<<<<<< HEAD
 .yen-converter p {
   margin: 2%;
   margin-top: 3%;
   margin-left: 30%;
   color: rgb(46, 52, 54);
 }
+
 .yen-converter input {
   width: 40%;
   height: 4vh;
@@ -60,6 +59,7 @@ form {
   border: solid 2px rgb(151, 163, 173);
   border-radius: 6px;
 }
+
 #taux {
   color: whitesmoke;
   width: 50%;
@@ -85,15 +85,8 @@ form {
 
 .todo-container {
   background-color: rgba(169, 195, 214, 0.30000001192092896);
-  margin: 20px;
+  margin: 15%;
   padding: 20px;
-=======
-
-.todo-container {
-  background-color: rgba(169, 195, 214, 0.30000001192092896);
-  padding: 5%;
-  margin: 10% 20%;
->>>>>>> dev
   border-radius: 4%;
   text-align: left;
   box-shadow: 0px 0px 15px 0px #635d5d;
@@ -110,36 +103,42 @@ span {
   font-size: 0.9em;
 }
 
+input {
+  cursor: pointer;
+  width: 30%;
+  border-color: rgb(187, 197, 201);
+  background-color: whitesmoke;
+}
+
 ul {
   list-style-type: none;
 }
 
-a {
-  text-decoration: none;
-  color: initial;
-}
-
-a:hover {
-  color: #e9e9e9;
-  font-size: 1.2em;
-}
-
-input {
-  cursor: pointer;
-}
-
 @media screen and (min-width: 1024px) {
+  body {
+    margin: auto;
+  }
+  .main {
+    width: 70%;
+  }
   .img {
-    margin: 0% 10%;
-    width: 80%;
-    height: 20%;
-    display: flex;
-    justify-content: center;
+    width: 70%;
+    height: 400px;
+    margin: 50px;
+    border-radius: 10px;
+  }
+  #seaside {
+    height: 200%;
   }
   .texte {
     font-size: 1.3em;
-    margin: 0% 10%;
-    justify-content: center;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    margin-top: 5%;
+    margin-bottom: 7;
+    margin-left: 6%;
+    text-align: justify;
   }
   h2 {
     font-size: 1.3em;
@@ -147,7 +146,9 @@ input {
   #beforeleaving {
     font-size: 1.3em;
   }
-
+  .yen-converter {
+    font-size: 1.4em;
+  }
   .title {
     display: flex;
     justify-content: center;
@@ -155,7 +156,6 @@ input {
   }
   .todo-container {
     font-size: 1.3em;
-<<<<<<< HEAD
     margin: 20px 70px;
     padding: 50px;
   }
@@ -171,12 +171,12 @@ input {
   #inputEuro {
     padding: 4%;
     width: 8vw;
-=======
-    margin: 8% 30%;
-    padding: 2%;
   }
-  #converter {
-    margin: 5% 10%;
->>>>>>> dev
+
+  .checklist {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
 }
