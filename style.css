@@ -5,8 +5,8 @@
 }
 
 @font-face {
-  font-family: "chinchan";
-  src: url("assets/ChinChan.ttf") format("truetype");
+  font-family: 'chinchan';
+  src: url('assets/ChinChan.ttf') format('truetype');
 }
 
 .navlogo {
@@ -51,7 +51,7 @@
 }
 
 h1 {
-  font-family: "chinchan";
+  font-family: 'chinchan';
   font-weight: bold;
   font-size: 24px;
   text-align: center;
@@ -63,7 +63,7 @@ h1 {
 
 body {
   background-color: rgba(218, 226, 228, 0.25);
-  font-family: "Cabin";
+  font-family: 'Cabin';
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -238,7 +238,7 @@ footer {
     margin: 0;
     text-transform: uppercase;
     text-align: left;
-    background-image: url("./assets/Photo\ navbar.jpg");
+    background-image: url('./assets/Photo\ navbar.jpg');
     flex-grow: 1;
     background-repeat: no-repeat;
     background-size: cover;
