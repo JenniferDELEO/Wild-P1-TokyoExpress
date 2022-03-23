@@ -17,3 +17,19 @@ corpusElement.innerHTML = poiObject.corpus;
 
 const photoElement = document.getElementById("photoAdresse");
 photoElement.src = poiObject.image;
+
+
+const message =
+"Merci pour votre commentaire !";
+
+
+const contactFormEvent = document.getElementById("contactForm");
+contactFormEvent.addEventListener("submit", (event) => {
+    event.preventDefault();
+    alert(message);
+  });
+
+  const textInput = document.getElementById("textInput");
+  textInput.addEventListener("input", (event) => {
+      console.log(textInput.value)
+  })
