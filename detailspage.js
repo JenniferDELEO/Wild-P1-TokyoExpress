@@ -1,7 +1,7 @@
 const poiID = parseInt(window.location.search.replace("?id=", ""));
 let poiObject = null;
 for (let i = 0; i < pointOfInterestList.length; i++ ) {
-    const currentPoi = pointOfInterestList[0]; 
+    const currentPoi = pointOfInterestList[i]; 
     if (currentPoi["id"] === poiID) {
         poiObject = currentPoi 
     }
