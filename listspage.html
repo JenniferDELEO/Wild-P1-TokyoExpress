@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="nav.css" />
     <link rel="stylesheet" href="listspage.css" />
     <link
       rel="stylesheet"
@@ -16,11 +17,36 @@
   </head>
   <body>
     <header>
-      <nav class="navlogo">
-        <img src="assets/logojapan.png" alt="Logo japan" id="logojapan" />
-        <a href="Menu.html"
-          ><img src="assets/logoburger.png" alt="Logo burger" id="logoburger"
-        /></a>
+      <nav class="navbar">
+        <div class="navbar-container container">
+          <img class="logo" src="assets/logojapanwhite.png" alt="Logo japan" />
+          <input type="checkbox" name="" id="" />
+          <div class="hamburger-lines">
+            <span class="line line1"></span>
+            <span class="line line2"></span>
+            <span class="line line3"></span>
+          </div>
+          <ul class="menu-items">
+            <li>
+              <a href="index.html"><i class="fa-solid fa-house"></i>Accueil</a>
+            </li>
+            <li>
+              <a href="preparation.html"
+                ><i class="fa-solid fa-plane"></i>Préparation</a
+              >
+            </li>
+            <li>
+              <a href="listspage.html"
+                ><i class="fa-solid fa-map-location"></i>Adresses</a
+              >
+            </li>
+            <li>
+              <a href="aboutus.html"
+                ><i class="fa-solid fa-circle-info"></i>À propos</a
+              >
+            </li>
+          </ul>
+        </div>
       </nav>
       <section class="navdesktop">
         <div id="upNav">
