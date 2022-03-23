@@ -20,92 +20,102 @@
     </header>
 
     <div class="main">
+      <h1>Préparation au voyage</h1>
 
-    <h1>Préparation au voyage</h1>
+      <div class="title" id="beforeleaving">
+        <p>
+          Avant de partir au « pays du soleil levant », il te faut connaître
+          quelques formalités administratives...
+        </p>
+      </div>
 
-    <div class="title" id="beforeleaving">
-      <p>
-        Avant de partir au « pays du soleil levant », il te faut connaître
-        quelques formalités administratives...
-      </p>
-    </div>
-    
+      <img src="assets/carte.jpeg" alt="carte" class="img" />
 
-    <img src="assets/carte.jpeg" alt="carte" class="img" />
+      <div class="texte" id="admin">
+        <h2>🇯🇵 Visa et formalités administratives</h2>
 
-    <div class="texte" id="admin">
-      <h2>🇯🇵 Visa et formalités administratives</h2>
+        <p>
+          Bonne nouvelle, si tu es français, suisse ou belge, le visa n’est pas
+          nécessaire pour séjourner au Japon moins de 3 mois. Le passeport est
+          obligatoire.
+        </p>
+        <p>
+          Aussi, à l’arrivée au Japon, à l’Immigration, on va prendre tes
+          empreintes digitales et une photo.
+        </p>
+      </div>
 
-      <p>
-        Bonne nouvelle, si tu es français, suisse ou belge, le visa n’est pas
-        nécessaire pour séjourner au Japon moins de 3 mois. Le passeport est
-        obligatoire.</p>
-        <p> Aussi, à l’arrivée au Japon, à l’Immigration, on va prendre tes
-        empreintes digitales et une photo.</p>
-    </div>
+      <img src="assets/yen.jpeg" alt="yen" class="img" />
 
-    <img src="assets/yen.jpeg" alt="yen" class="img" />
+      <div class="texte" id="yen">
+        <h2>💸 Budget moyen :</h2>
 
-    <div class="texte" id="yen">
-      <h2>💸 Budget moyen :</h2>
-
-      <p>Le billet d'avion : à partir de 800€ pour un direct</p> 
+        <p>Le billet d'avion : à partir de 800€ pour un direct</p>
         <p>L'hébergement : 200€</p>
-        <p>la semaine en dortoirs, à partir de 400€ pour être mieux installé</p> 
-        <p>Le transport : peu si vous ne bougez pas beaucoup, sinon prendre un Pass</p>
+        <p>la semaine en dortoirs, à partir de 400€ pour être mieux installé</p>
+        <p>
+          Le transport : peu si vous ne bougez pas beaucoup, sinon prendre un
+          Pass
+        </p>
         <p>La nourriture : 30€ / jour au minimum.</p>
 
-      <h2>💴 Monnaie locale :</h2>
-      <p>
-        Au Japon, la devise en vigueur est le yen (¥). <br />
-        Tu peux changer des devises en France ou sur place (bureaux de change
-        sont ouvertes tous les jours sur place) ou auprès de ta banque.
-      </p>
-    </div>
-
-    <section class="yen-converter">
-        <p>taux par défaut :</p>
-      <span id="default-rate"></span>
-      <h3>Entre ton montant en €uros</h3>
-
-        <form id = "converter">
-        <input type = "number" id = "inputEuro" min="0" placeholder="0,00"/>
-        <div id = "resultYen">
-        <span id="currency-yen"></span></div>
-        </form>
-        </section>
-                
-    <img src="assets/seaside.jpg" alt="seaside" class="img" />
-
-    <div class="texte" id="tips">
-      <h2>ℹ️ Autres infos utiles :</h2>
-      <p>
-        Meilleures saisons : le printemps , pour les couleurs (éclosion des
-        fleurs de cerisiers) ou l’automne, saison agréable pour sa douceur et
-        les couleurs des arbres. </p>
-       <p>✈️ Durée de vol direct depuis Paris : environ 12h </p>
-
-        <p>⏱ Décalage horaire : + 7h en été, + 8h en hiver </p>
-    </div>
-
-    <section class="todo-list">
-      <div class="todo-container">
-        <h3>
-          ✅ Check-list: <br />
-          <span> à mettre dans ta valise (ou ton backpack d'aventurier)</span>
-        </h3>
-        <input type="checkbox" id="completed" value="coding" checked />
-        <label for="completed"> ton passeport et portefeuille </label>
-        <input type="checkbox" id="completed" value="coding" checked />
-        <label for="completed"> ton appareil photo </label>
-        <input type="checkbox" id="completed" value="coding" checked />
-        <label for="completed"> un adaptateur de prise </label>
-        <input type="checkbox" id="completed" value="coding" checked />
-        <label for="completed">
-          de bonnes baskets <br />
-          (n’oublie pas la superficie de Tokyo est de 2 188 km²!) </label>
+        <h2>💴 Monnaie locale :</h2>
+        <p>
+          Au Japon, la devise en vigueur est le yen (¥). <br />
+          Tu peux changer des devises en France ou sur place (bureaux de change
+          sont ouvertes tous les jours sur place) ou auprès de ta banque.
+        </p>
       </div>
-    </section>
+
+      <section class="yen-converter">
+        <p id="taux">Taux par défaut : <span id="default-rate"></span></p>
+
+        <div class="convert-container">
+          <h3>Entre ton montant en €uros</h3>
+          <input type="number" id="inputEuro" min="0" placeholder="0,00" />
+
+          <div id="resultYen">
+            <p id="result">
+              <span id="currency-yen"></span>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <img src="assets/seaside.jpg" id="seaside" alt="seaside" class="img" />
+
+      <div class="texte" id="tips">
+        <h2>ℹ️ Autres infos utiles :</h2>
+        <p>
+          Meilleures saisons : le printemps , pour les couleurs (éclosion des
+          fleurs de cerisiers) ou l’automne, saison agréable pour sa douceur et
+          les couleurs des arbres.
+        </p>
+        <p>✈️ Durée de vol direct depuis Paris : environ 12h</p>
+
+        <p>⏱ Décalage horaire : + 7h en été, + 8h en hiver</p>
+      </div>
+
+      <section class="todo-list">
+        <div class="todo-container">
+          <h3>
+            ✅ Check-list: <br />
+            <span> à mettre dans ta valise (ou ton backpack d'aventurier)</span>
+          </h3>
+          <input type="checkbox" id="completed" value="coding" unchecked />
+          <label for="completed"> ton passeport et portefeuille </label>
+          <input type="checkbox" id="completed" value="coding" unchecked />
+          <label for="completed"> ton appareil photo </label>
+          <input type="checkbox" id="completed" value="coding" unchecked />
+          <label for="completed"> un adaptateur de prise </label>
+          <input type="checkbox" id="completed" value="coding" unchecked />
+          <label for="completed">
+            de bonnes baskets <br />
+            (n’oublie pas la superficie de Tokyo est de 2 188 km²!)
+          </label>
+        </div>
+      </section>
+    </div>
 
     <footer>
       <div class="logofooter">
