@@ -36,12 +36,11 @@ console.log(todoList);
 
 for (let i = 0; i < todoList.length; i++) {
   if (todoList[i].checked) {
-    console.log("Bravo, tu es prêt pour l'aventure ! 🧳 ");
+    alert("Bravo, tu es prêt pour l'aventure ! 🧳 ");
   }
 }
 
 /*if (todoList[i].checked === true) {
-      checkedBox++;
     }
   }
   if (todoList >= 4) {*/
