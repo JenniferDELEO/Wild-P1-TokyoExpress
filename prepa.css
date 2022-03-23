@@ -66,6 +66,7 @@ h2 {
   border-radius: 10px;
   margin-left: 0;
 }
+
 #result {
   background-color: whitesmoke;
   width: 40%;
@@ -76,6 +77,8 @@ h2 {
   color: #667e9c;
   border: solid 2px rgb(151, 163, 173);
   border-radius: 6px;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .todo-container {
@@ -154,7 +157,6 @@ ul {
     font-size: 1.3em;
     margin: 20px 70px;
     padding: 50px;
-    text-align: left;
   }
   .yen-converter {
     border-radius: 15px;
