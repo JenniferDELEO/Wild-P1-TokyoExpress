@@ -152,7 +152,7 @@ img:hover {
   border-radius: 5px;
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1024px) {
   main {
     margin: 0 auto;
   }
