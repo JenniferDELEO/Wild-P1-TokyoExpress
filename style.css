@@ -273,7 +273,7 @@ footer {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
   .categoriefooter {
     margin: 0;
     display: flex;
@@ -311,5 +311,8 @@ footer {
 
   .arrow {
     margin-right: 10px;
+    position: fixed;
+    bottom: 10%;
+    right: 1%;
   }
 }
