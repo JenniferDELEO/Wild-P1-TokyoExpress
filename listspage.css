@@ -1,3 +1,5 @@
+/*Main*/
+
 h2 {
   width: 95%;
   background-color: #7d191b;
@@ -25,6 +27,8 @@ h2 {
   margin-right: 8px;
 }
 
+/*Lieux à visiter - Hôtels - Restaurants*/
+
 h3 {
   text-decoration: underline;
   text-align: center;
@@ -44,16 +48,16 @@ h3:visited {
   margin-top: 10px;
 }
 
-p {
+main p {
   padding: 5px;
   text-decoration: none;
 }
 
-a {
+main a {
   text-decoration: none;
 }
 
-a:visited {
+main a:visited {
   text-decoration: none;
   color: #2c2c2e;
 }
@@ -128,6 +132,8 @@ img:hover {
   opacity: 80%;
 }
 
+/*Carte*/
+
 #mapInfo {
   display: flex;
   justify-content: space-between;
@@ -167,11 +173,11 @@ img:hover {
 }
 
 .leaflet-popup-content {
-  font-size: 1.5em;
+  font-size: 1.2em;
 }
 
 .map-list {
-  border: 1px solid #ffffff;
+  border: 1px solid transparent;
 }
 
 .map-list:hover {
