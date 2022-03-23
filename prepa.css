@@ -1,7 +1,13 @@
 h2 {
-  font-size: 1.1em;
-  font-weight: bold;
-  color: #7d191b;
+  width: 100%;
+  background-color: #7d191b;
+  border: solid 1px #7d191b;
+  font-size: large;
+  color: #ffffff;
+  border-radius: 5px;
+  padding: 8px;
+  padding-left: 24px;
+  margin: 24px auto;
 }
 
 .title {
@@ -63,7 +69,8 @@ h2 {
 #result {
   background-color: whitesmoke;
   width: 40%;
-  height: 4vh;
+  height: 3.8vh;
+  padding-top: 2%;
   font-weight: normal;
   font-size: large;
   color: #667e9c;
@@ -73,13 +80,10 @@ h2 {
 
 .todo-container {
   background-color: rgba(169, 195, 214, 0.30000001192092896);
-  padding: 5%;
-  margin: 10% 15%;
+  margin: 20px;
+  padding: 20px;
   border-radius: 4%;
   text-align: left;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
   box-shadow: 0px 0px 15px 0px #635d5d;
 }
 
@@ -148,12 +152,21 @@ ul {
   }
   .todo-container {
     font-size: 1.3em;
-    margin: 8% 30%;
-    padding: 2%;
+    margin: 20px 70px;
+    padding: 50px;
     text-align: left;
   }
   .yen-converter {
     border-radius: 15px;
-    margin: 5% 10%;
+    padding: 4%;
+  }
+  #result {
+    padding-bottom: 7%;
+    width: 8vw;
+    padding-left: 4%;
+  }
+  #inputEuro {
+    padding: 4%;
+    width: 8vw;
   }
 }

@@ -34,7 +34,7 @@ currentRate.innerText = rate;
 const todoList = document.querySelector(".todo-container");
 const checkedBox = 0;
 for (let i = 0; i < todoList.length; i++) {
-  if (todoList[i].type == "checkbox") {
+  if (todoList[i].type === "checkbox") {
     if (todoList[i].checked === true) {
       checkedBox++;
     }
