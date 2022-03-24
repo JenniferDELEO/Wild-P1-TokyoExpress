@@ -1,9 +1,16 @@
+const contactFormInJS = document.getElementById('contact-form');
 
-const messageAfterSubmit ="Merci pour ton message 😜 L'équipe de Tokyo Express te répondra dès que possible !";
-
-
-document
-  .getElementById("contactFormAboutus").addEventListener("submit", function(event) {
+function sendMessage(event) {
     event.preventDefault();
-    alert(messageAfterSubmit);
-  });
+    const divToFill = document.querySelector('.dynamicMessageSentSection');
+    const name = document.querySelector('#user_name');
+    const message = document.querySelector('#message');
+    document.querySelector('#contact-form').style.display = 'none';
+    divToFill.innerHTML = `
+    <h3>Message envoyé</h3>
+    <p>Merci ${name.value} 😜, l'équipe de Tokyo Express a bien reçu ton message :<br>
+    "${message.value}".
+    Nous te répondrons dès que possible !</p>`
+  }
+
+contactFormInJS.addEventListener('submit', sendMessage)

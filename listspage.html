@@ -52,8 +52,10 @@
     </header>
     <main>
       <h1>Les bonnes adresses</h1>
-      <h2 id="placesTitle">Lieux à visiter<button id="arrow"></button></h2>
-      <section id="places">
+      <h2 class="displayTitle" id="placesTitle">
+        Lieux à visiter<button id="arrow"></button>
+      </h2>
+      <section id="places" class="display displayBox">
         <a href="./detailspage.html?id=1" class="places-box">
           <img
             src="./assets/Lieu 1.jpeg"
@@ -94,11 +96,11 @@
           </p>
         </a>
       </section>
-      <h2 id="hostelTitle">
+      <h2 class="displayTitle" id="hostelTitle">
         Hotel
         <button id="arrow"></button>
       </h2>
-      <section id="hostel">
+      <section id="hostel" class="display displayBox">
         <a href="./detailspage.html?id=4" class="hostel-box">
           <img
             src="./assets/Photo hotel 1.jpg"
@@ -148,11 +150,11 @@
           </div>
         </a>
       </section>
-      <h2 id="restaurantTitle">
+      <h2 class="displayTitle" id="restaurantTitle">
         Restaurant
         <button id="arrow"></button>
       </h2>
-      <section id="restaurant">
+      <section id="restaurant" class="display displayBox">
         <a href="./detailspage.html?id=7" class="restaurant-box">
           <img
             src="./assets/Photo Restaurant 1 coupée.jpg"
@@ -197,7 +199,7 @@
         </a>
       </section>
       <section id="carte">
-        <h2>Carte interactive <button id="arrow"></button></h2>
+        <h2>Carte interactive</h2>
         <div id="map-container">
           <div id="mapInfo">
             <div class="map-items" id="map-places">
@@ -297,7 +299,6 @@
       integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
       crossorigin=""
     ></script>
-    <script src="./adresseslists.js"></script>
     <script src="./listspage.js"></script>
   </body>
 </html>
