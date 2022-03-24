@@ -31,19 +31,21 @@ inputValue.addEventListener("input", (e) => {
 
 currentRate.innerText = rate;
 
-//checkbox
+/* ------------------ TO DO LIST --------------------------- */
 
 const todoList = document.querySelectorAll(".completed");
-console.log(todoList);
+const message = "Bravo, tu es prêt pour l'aventure ! 🧳 ";
 
-todoList.addEventListener("checked");
-alert("Bravo, tu es prêt pour l'aventure ! 🧳 ");
-
-//for (let i = 0; i < todoList.length; i++) {
-//console.log("test");
-//if (todoList[i].checked) {
-
-/*if (todoList[i].checked === true) {
+for (let i = 0; i < todoList.length; i++) {
+  todoList[i].addEventListener("click", function (event) {
+    let allChecked = true;
+    for (let y = 0; y < todoList.length; y++) {
+      if (!todoList[y].checked) {
+        allChecked = false;
+      }
     }
-  }
-  if (todoList >= 4) {*/
+    if (allChecked) {
+      alert(message);
+    }
+  });
+}
