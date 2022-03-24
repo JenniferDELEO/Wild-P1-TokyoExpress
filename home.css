@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 *,
 *::after,
@@ -258,7 +258,7 @@ nav ul {
 }
 
 .img-container::after {
-  content: '';
+  content: "";
   display: block;
   position: absolute;
   top: 0;
@@ -301,7 +301,7 @@ nav ul {
     opacity: 1;
   }
 
-  .navbar-container input[type='checkbox'],
+  .navbar-container input[type="checkbox"],
   .navbar-container .hamburger-lines {
     display: block;
   }
@@ -312,7 +312,7 @@ nav ul {
     height: 64px;
   }
 
-  .navbar-container input[type='checkbox'] {
+  .navbar-container input[type="checkbox"] {
     position: absolute;
     display: block;
     height: 40px;
@@ -381,19 +381,19 @@ nav ul {
     text-align: left;
   }
 
-  .navbar-container input[type='checkbox']:checked ~ .menu-items {
+  .navbar-container input[type="checkbox"]:checked ~ .menu-items {
     transform: translateX(0);
   }
 
-  .navbar-container input[type='checkbox']:checked ~ .hamburger-lines .line1 {
+  .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
     transform: rotate(35deg);
   }
 
-  .navbar-container input[type='checkbox']:checked ~ .hamburger-lines .line2 {
+  .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line2 {
     transform: scaleY(0);
   }
 
-  .navbar-container input[type='checkbox']:checked ~ .hamburger-lines .line3 {
+  .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
     transform: rotate(-35deg);
   }
 
