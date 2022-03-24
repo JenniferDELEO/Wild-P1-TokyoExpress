@@ -18,6 +18,12 @@
   margin: 12px;
 }
 
+.corpstexte,
+.corpstexte2,
+.menuResto {
+  padding: 10px 10px;
+}
+
 #leavecom {
   padding: 0px 23px;
 }
@@ -32,7 +38,7 @@ textarea {
 .fa-star {
   color: gray;
   cursor: pointer;
-  padding: 0.0625rem;
+
 }
 .fa-star.gold {
   color: #ffdc0f;
@@ -43,6 +49,7 @@ textarea {
   flex-direction: column;
   align-items: center;
   font-size: 50%;
+  padding: 20px;
 }
 .stars {
   display: inline-flex;
