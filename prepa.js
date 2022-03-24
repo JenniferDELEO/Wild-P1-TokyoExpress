@@ -1,21 +1,3 @@
-//const deleteBtn = document.createElement('button');
-
-//actionElement.appendChild(deleteBtn);
-//titleElement.addEventListener('click', () => {
-// titleElement.classList.toggle('done');
-//});
-// line.appendChild(actionElement);
-// tasksTable.appendChild(line);
-
-//const message = "Bravo, tu es prêt ! ✌️";
-//document.getElementById("completed").checked = true;
-//document.getElementById("completed") = false;
-//document.querySelector(#completed).addEventListener('click',function(event){
-// event<.preventDefault();
-//return message;
-//});
-//
-
 const inputValue = document.getElementById("inputEuro");
 const result = document.getElementById("result");
 const currency = document.querySelector("#currency-yen");
