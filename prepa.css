@@ -1,3 +1,13 @@
+:root {
+  --primary-color: #edf2fc;
+  --secondary-color: #202020;
+}
+
+.dark-theme {
+  --primary-color: #202020;
+  --secondary-color: #edf2fc;
+}
+
 h2 {
   width: 100%;
   background-color: #7d191b;
@@ -20,7 +30,7 @@ h2 {
 
 #beforeleaving :first-child {
   font-size: 1.2em;
-  color: #2c2c2e;
+  color: var(--secondary-color);
   text-align: center;
 }
 
@@ -82,8 +92,6 @@ h2 {
   color: #667e9c;
   border: solid 2px rgb(151, 163, 173);
   border-radius: 6px;
-  display: flex;
-  justify-content: flex-end;
 }
 
 #euros {
@@ -123,8 +131,9 @@ span {
   font-size: 0.9em;
 }
 
-input {
+.completed {
   cursor: pointer;
+  opacity: initial;
 }
 
 ul {

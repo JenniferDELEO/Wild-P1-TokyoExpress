@@ -1,43 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-*,
-*::after,
-*::before {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
-
-:root {
-  --primary-color: #edf2fc;
-  --secondary-color: #202020;
-}
-
-.dark-theme {
-  --primary-color: #202020;
-  --secondary-color: #edf2fc;
-}
-
-/* ............/navbar/............ */
-
 h1 {
   font-family: 'chinchan';
   font-weight: bold;
-  font-size: 24px;
+  box-shadow: black 50px;
   text-align: center;
   color: #7d191b;
   padding: 20px 20px;
-  margin: 20px 40px;
   font-weight: 900;
 }
 
 body {
-  background-color: var(--primary-color);
+  background-color: rgba(218, 226, 228, 0.25);
   font-family: 'Cabin';
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  color: var(--secondary-color);
+  color: #2c2c2e;
 }
 
 /*-----------------------Footer----------------------*/
@@ -45,7 +24,7 @@ body {
 footer {
   width: 100%;
   background-color: #5f6b7c;
-  color: #edf2fc;
+  color: #ffffff;
   padding: 10px;
 }
 
@@ -120,13 +99,13 @@ footer {
 }
 
 .categoriefooter a:link {
-  color: var(--primary-color);
+  color: #ffffff;
   font-size: 1em;
   text-decoration: none;
 }
 
 .categoriefooter a:visited {
-  color: var(--primary-color);
+  color: #ffffff;
   font-size: 1em;
   text-decoration: none;
 }
@@ -176,90 +155,5 @@ footer {
     position: fixed;
     bottom: 10%;
     right: 1%;
-  }
-
-  .logo {
-    width: 50px;
-    top: 0;
-  }
-
-  input {
-    opacity: 0;
-  }
-
-  .navbar input,
-  .navbar .hamburger-lines {
-    color: #7d191b;
-  }
-
-  .navbar-container {
-    width: 80%;
-    margin: auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: auto;
-    position: initial;
-  }
-
-  .navbar-container .hamburger-lines {
-    display: none;
-  }
-
-  .navdesktop {
-    display: initial;
-    margin-bottom: 54px;
-  }
-
-  #upNav {
-    display: flex;
-  }
-
-  .navdesktop ul {
-    display: flex;
-    list-style: none;
-    justify-content: space-around;
-    align-items: center;
-    padding: 0 15px;
-    background-color: #7d191b;
-    height: 40px;
-  }
-
-  #upNav h1 {
-    margin: 0;
-    text-transform: uppercase;
-    text-align: left;
-    background-image: url('./assets/Photo\ navbar.jpg');
-    flex-grow: 1;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    padding: auto 10px;
-  }
-
-  #homeNav {
-    height: 72px;
-    padding-left: 12px;
-    padding-right: 12px;
-  }
-
-  #prepNav,
-  #placesNav,
-  #aboutNav {
-    color: #edf2fc;
-    flex: 1;
-    text-align: center;
-    height: 72px;
-    padding: 20px;
-    border-radius: 5px;
-    font-weight: bold;
-    font-size: 1.2em;
-    cursor: pointer;
-  }
-
-  h1 {
-    margin-top: 40px;
-    margin-bottom: 24px;
-    font-size: 2.6em;
   }
 }
