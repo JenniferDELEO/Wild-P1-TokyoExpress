@@ -12,7 +12,7 @@ h2 {
     max-width: 900px;
 }
 
-a{
+main a{
     text-decoration: none;
 }
 
@@ -34,7 +34,7 @@ main input{
     margin-bottom: 1rem;
 }
 
-textarea{
+main textarea{
     width:100%;
     margin-top: 0.5rem;
     max-width: 700px;
