@@ -5,36 +5,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Preparation</title>
+    <link rel="icon" type="image/png" href="assets/logojapan.png" />
     <link href="style.css" rel="stylesheet" type="text/css" />
     <link href="prepa.css" rel="stylesheet" type="text/css" />
   </head>
 
   <body>
     <header>
-      <nav class="navlogo">
-        <img src="assets/logojapan.png" alt="Logo japan" id="logojapan" />
-        <a href="Menu.html">
-          <img src="assets/logoburger.png" alt="Logo burger" id="logoburger"
-        /></a>
-      </nav>
-      <section class="navdesktop">
-        <div id="upNav">
-          <a href="./homepage.html"
-            ><img src="assets/logojapan.png" alt="Logo japan" id="homeNav"
+      <nav class="navbar">
+        <div class="navbar-container container">
+          <a href="./index.html"
+            ><img class="logo" src="assets/logojapanwhite.png" alt="Logo japan"
           /></a>
-          <h1>Tokyo Express</h1>
+          <input type="checkbox" name="" id="" />
+          <div class="hamburger-lines">
+            <span class="line line1"></span>
+            <span class="line line2"></span>
+            <span class="line line3"></span>
+          </div>
+          <ul class="menu-items">
+            <li>
+              <a href="index.html"><i class="fa-solid fa-house"></i>Accueil</a>
+            </li>
+            <li>
+              <a href="preparation.html"
+                ><i class="fa-solid fa-plane"></i>Préparation</a
+              >
+            </li>
+            <li>
+              <a href="listspage.html"
+                ><i class="fa-solid fa-map-location"></i>Adresses</a
+              >
+            </li>
+            <li>
+              <a href="aboutus.html"
+                ><i class="fa-solid fa-circle-info"></i>À propos</a
+              >
+            </li>
+          </ul>
         </div>
-        <ul>
-          <li>
-            <a href="./preparation.html" id="prepNav">Préparation au voyage</a>
-          </li>
-          <li><a href="./listspage.html" id="placesNav">Adresses</a></li>
-          <li><a href="./aboutus.html" id="aboutNav">A propos</a></li>
-        </ul>
-      </section>
+      </nav>
     </header>
 
-    <div class="main">
+    <main>
       <h1>Préparation au voyage</h1>
 
       <div class="title" id="beforeleaving">
@@ -87,12 +100,15 @@
 
         <div class="convert-container">
           <h3>Entre ton montant en €uros</h3>
-          <input type="number" id="inputEuro" min="0" placeholder="0,00" />
-
+          <div id="euros">
+            <input type="number" id="inputEuro" min="0" placeholder="0,00" />
+            <p>€</p>
+          </div>
           <div id="resultYen">
             <p id="result">
               <span id="currency-yen"></span>
             </p>
+            <p>¥</p>
           </div>
         </div>
       </section>
@@ -117,20 +133,50 @@
             ✅ Check-list: <br />
             <span> à mettre dans ta valise (ou ton backpack d'aventurier)</span>
           </h3>
-          <input type="checkbox" id="completed" value="coding" unchecked />
-          <label for="completed"> ton passeport et portefeuille </label>
-          <input type="checkbox" id="completed" value="coding" unchecked />
-          <label for="completed"> ton appareil photo </label>
-          <input type="checkbox" id="completed" value="coding" unchecked />
-          <label for="completed"> un adaptateur de prise </label>
-          <input type="checkbox" id="completed" value="coding" unchecked />
-          <label for="completed">
-            de bonnes baskets <br />
-            (n’oublie pas la superficie de Tokyo est de 2 188 km²!)
-          </label>
+          <div class="checklist">
+            <div class="checklist-element">
+              <input
+                type="checkbox"
+                class="completed"
+                value="coding"
+                unchecked
+              />
+              <label for="completed"> ton passeport et portefeuille </label>
+            </div>
+            <div class="checklist-element">
+              <input
+                type="checkbox"
+                class="completed"
+                value="coding"
+                unchecked
+              />
+              <label for="completed"> ton appareil photo </label>
+            </div>
+            <div class="checklist-element">
+              <input
+                type="checkbox"
+                class="completed"
+                value="coding"
+                unchecked
+              />
+              <label for="completed"> un adaptateur de prise </label>
+            </div>
+            <div class="checklist-element">
+              <input
+                type="checkbox"
+                class="completed"
+                value="coding"
+                unchecked
+              />
+              <label for="completed">
+                de bonnes baskets <br />
+                (n’oublie pas la superficie de Tokyo est de 2 188 km²!)
+              </label>
+            </div>
+          </div>
         </div>
       </section>
-    </div>
+    </main>
 
     <footer>
       <div class="logofooter">
@@ -138,12 +184,12 @@
           <a
             href="https://www.instagram.com/tokyo.explores/?hl=fr"
             target="_blank"
-            ><img class="insta" src="assets/insta blanc.png" alt="logo insta"
+            ><img class="insta" src="assets/insta_blanc.png" alt="logo insta"
           /></a>
           <a href="homepage.html" target="_blank"
             ><img
               class="twitter"
-              src="assets/twitter blanc.png"
+              src="assets/twitter_blanc.png"
               alt="logo twitter"
           /></a>
           <a
@@ -151,18 +197,18 @@
             target="_blank"
             ><img
               class="github"
-              src="assets/github blanc.png"
+              src="assets/github_blanc.png"
               alt="logo github"
           /></a>
           <a href="https://www.facebook.com/GoTokyo.en/" target="_blank"
-            ><img class="fb" src="assets/fb blanc.png" alt="logo facebook"
+            ><img class="fb" src="assets/fb_blanc.png" alt="logo facebook"
           /></a>
           <a
             href="https://www.linkedin.com/in/jennifer-de-leo-321432a4/"
             target="_blank"
             ><img
               class="linkedin"
-              src="assets/linkedin blanc.png"
+              src="assets/linkedin_blanc.png"
               alt="logo linkedin"
           /></a>
         </div>
@@ -177,7 +223,7 @@
       </div>
 
       <div class="categoriefooter">
-        <a class="accueilfooter" href="homepage.html">Accueil</a>
+        <a class="accueilfooter" href="index.html">Accueil</a>
         <a class="preparationfooter" href="preparation.html"
           >Préparation au voyage</a
         >
@@ -190,7 +236,10 @@
         <p>2022 Tokyo Express. Tous droits réservés</p>
       </div>
     </footer>
-
+    <script
+      src="https://kit.fontawesome.com/4b82133d48.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="prepa.js"></script>
   </body>
 </html>
