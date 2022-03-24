@@ -26,7 +26,6 @@ shinjukuMap.addEventListener("click", () => {
       "<h4>Les jardins de Shinjuku</h4><p>11 Naitomachi, Shinjuku City, Tokyo 160-0014, Japon</p>"
     )
     .openPopup();
-  shinjukuMap.classList.toggle("backgroundRed");
 });
 
 sensoMap.addEventListener("click", () => {
