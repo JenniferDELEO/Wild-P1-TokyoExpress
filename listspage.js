@@ -110,3 +110,22 @@ L.marker([35.6814498, 139.7651325]).addTo(map).openPopup();
 L.marker([35.6674635, 139.7711801]).addTo(map).openPopup();
 L.marker([35.6613933, 139.6979697]).addTo(map).openPopup();
 L.marker([35.6689554, 139.7070792]).addTo(map).openPopup();
+
+const placesTitle = document.getElementById("placesTitle");
+const hostelTitle = document.getElementById("hostelTitle");
+const restaurantTitle = document.getElementById("restaurantTitle");
+const placesDisplay = document.getElementById("places");
+const hostelDisplay = document.getElementById("hostel");
+const restaurantDisplay = document.getElementById("restaurant");
+
+placesTitle.addEventListener("click", () => {
+  placesDisplay.classList.toggle("display");
+});
+
+hostelTitle.addEventListener("click", () => {
+  hostelDisplay.classList.toggle("display");
+});
+
+restaurantTitle.addEventListener("click", () => {
+  restaurantDisplay.classList.toggle("display");
+});

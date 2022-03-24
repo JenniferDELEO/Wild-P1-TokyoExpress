@@ -8,73 +8,45 @@
     <title>About us</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
     <link href="aboutus.css" rel="stylesheet" type="text/css" />
-
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-    <script type="text/javascript">
-        (function() {
-            emailjs.init('V1Nmube5zUoNmMGEV');
-        })();
-    </script>
-
-    <script type="text/javascript">
-        window.onload = function() {
-            document.getElementById('contact-form').addEventListener('submit', function(event) {
-                event.preventDefault();
-                // generate a five digit number for the contact_number variable
-                this.contact_number.value = Math.random() * 100000 | 0;
-                // these IDs from the previous steps
-                emailjs.sendForm('contact_service', 'contact_form', this)
-                    .then(function() {
-                        console.log('SUCCESS!');
-                    }, function(error) {
-                        console.log('FAILED...', error);
-                    });
-            });
-        }
-    </script>
-
-
-
   </head>
 
 <body>
 
-  <header>
-    <nav class ="navlogo">
-        <img src="assets/logojapan.png" alt="Logo japan" id="logojapan"/>
-        <a href="Menu.html"><img src="assets/logoburger.png" alt="Logo burger"id="logoburger"/></a>
-    </nav>
-    <section class="navdesktop">
-        <div id="upNav">
-          <a href="./homepage.html"
-            ><img src="assets/logojapan.png" alt="Logo japan" id="homeNav"
+    <header>
+      <nav class="navbar">
+        <div class="navbar-container container">
+          <a href="./index.html"
+            ><img class="logo" src="assets/logojapanwhite.png" alt="Logo japan"
           /></a>
-          <h1>Tokyo Express</h1>
+          <input type="checkbox" name="" id="" />
+          <div class="hamburger-lines">
+            <span class="line line1"></span>
+            <span class="line line2"></span>
+            <span class="line line3"></span>
+          </div>
+          <ul class="menu-items">
+            <li>
+              <a href="index.html"><i class="fa-solid fa-house"></i>Accueil</a>
+            </li>
+            <li>
+              <a href="preparation.html"
+                ><i class="fa-solid fa-plane"></i>Préparation</a
+              >
+            </li>
+            <li>
+              <a href="listspage.html"
+                ><i class="fa-solid fa-map-location"></i>Adresses</a
+              >
+            </li>
+            <li>
+              <a href="aboutus.html"
+                ><i class="fa-solid fa-circle-info"></i>À propos</a
+              >
+            </li>
+          </ul>
         </div>
-        <ul>
-          <li>
-            <a href="./preparation.html" id="prepNav">Préparation au voyage</a>
-          </li>
-          <li><a href="./listspage.html" id="placesNav">Adresses</a></li>
-          <li><a href="./aboutus.html" id="aboutNav">A propos</a></li>
-        </ul>
-      </section>
-</header>
-
-
-
-    <form id="contact-form">
-      <h2> TEST DE EMAIL.HS</h2>
-        <input type="hidden" name="contact_number">
-        <label>Name</label>
-        <input type="text" name="user_name">
-        <label>Email</label>
-        <input type="email" name="user_email">
-        <label>Message</label>
-        <textarea name="message"></textarea>
-        <input type="submit" value="Send">
-    </form>
-
+      </nav>
+    </header>
 
 
 <main>
@@ -93,45 +65,28 @@
 
     <div id="aboutUscontact">
       <h2>Contacte-nous :</h2>
-      
-      <form id="contactFormAboutus">
 
-        <label for="name">Nom :</label><br>
-        <input type="text" id="name" name="name" placeholder="Votre nom"><br>
+    <form id="contact-form" class="contentInGreyBox">
+        <input type="hidden" name="contact_number">
 
-        <label for="email">Email :</label><br>
-        <input type="email" id="email" name="email" placeholder="votre@email.com"><br>
+        <label for="user_name">Nom :</label><br>
+        <input type="text" id="user_name" name="user_name" placeholder="Ton nom"><br>
+
+        <label for="user_email">Email :</label><br>
+        <input type="email" name="user_email"   id="user_email" placeholder="ton@email.com"><br>
 
         <label for="message">Message :</label><br>
-        <textarea id="message" name="message" placeholder="Ecrire votre message ici"></textarea> <br>
+        <textarea id="message" name="message" placeholder="Ecris ton message ici"></textarea> <br>
 
-        <input id='submitButton' type="submit" value="Envoyer mon message à Tokyo Express !">
-
-      </form>
-    </div>
-
-    
-    <form id="contact-form">
-      <h2> TEST DE EMAIL.JS</h2>
-      <p>Réessayer une fois le site mis en ligne sur Netify (pour l'instant erreur cf console)</p>
-        <input type="hidden" name="contact_number">
-        <label>Name</label>
-        <input type="text" name="user_name">
-        <label>Email</label>
-        <input type="email" name="user_email">
-        <label>Message</label>
-        <textarea name="message"></textarea>
-        <input type="submit" value="Send">
+        <input id='submitButton' type="submit" value="Envoie ton message à Tokyo Express !">
     </form>
 
-
-
-
+    <div class="dynamicMessageSentSection contentInGreyBox"></div>
 
     <div id="theTeam">  
         <h2>L'équipe :</h2>
 
-        <div id="aboutUsCardsContainer">
+        <div class="contentInGreyBox" id="cardsContainer">
             <div class="card">
                     <img class="polaroidFrame" src="./assets/aboutUs_PolaroidBackGround.png" alt="Polaroid frame"/>
                     <img class="profilePic" src="./assets/aboutUs_Anna.jpg" alt="Anna's Picture"/> 
@@ -163,24 +118,7 @@
             </div>
 
           </div>
-        </div>
-        
-        
-     <!-- 
-     <div class="cardsContainer">
-
-    <div class=cardFlex>
-        <img class="inCardFlex" src="./assets/aboutUs_PolaroidBackGround.png">
-        <img class="profilePic, inCardFlex" src="./assets/aboutUs_Anna.jpg" alt="Anna's Picture"/>
-    </div>
-    <img class="cardFlex" src="./assets/aboutUs_PolaroidBackGround.png">
-    <img class="cardFlex" src="./assets/aboutUs_PolaroidBackGround.png">
-    <img class="cardFlex" src="./assets/aboutUs_PolaroidBackGround.png">
-    <img class="cardFlex" src="./assets/aboutUs_PolaroidBackGround.png">
-    </div>
-
-    </div>
-     -->
+      </div>
 
     </main>
 
@@ -217,6 +155,32 @@
 
 
     <script src="aboutus.js"></script>
+      <script
+      src="https://kit.fontawesome.com/4b82133d48.js"
+      crossorigin="anonymous"
+    ></script>
+
+
+    <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init('V1Nmube5zUoNmMGEV');
+        })();
+      </script>
+    <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+                this.contact_number.value = Math.random() * 100000 | 0;
+                emailjs.sendForm('service_4n1pbjt', 'contact_form', this)
+                    .then(function() {
+                        console.log('SUCCESS!');
+                    }, function(error) {
+                        console.log('FAILED...', error);
+                    });
+            });
+        }
+    </script> -->
 
   </body>
 </html>
