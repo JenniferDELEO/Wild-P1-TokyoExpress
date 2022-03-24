@@ -16,7 +16,7 @@ currentRate.innerText = rate;
 /* ------------------ TO DO LIST --------------------------- */
 
 const todoList = document.querySelectorAll(".completed");
-const message = "Bravo, tu es prêt pour l'aventure ! 🧳 ";
+const message = "Bravo, tu es prêt pour l'aventure ! 🤠 ";
 
 for (let i = 0; i < todoList.length; i++) {
   todoList[i].addEventListener("click", function (event) {
