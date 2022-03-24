@@ -16,30 +16,42 @@
   </head>
   <body>
     <header>
-      <nav class="navlogo">
-        <img src="assets/logojapan.png" alt="Logo japan" id="logojapan" />
-        <a href="Menu.html"
-          ><img src="assets/logoburger.png" alt="Logo burger" id="logoburger"
-        /></a>
-      </nav>
-      <section class="navdesktop">
-        <div id="upNav">
-          <a href="./homepage.html"
-            ><img src="assets/logojapan.png" alt="Logo japan" id="homeNav"
+      <nav class="navbar">
+        <div class="navbar-container container">
+          <a href="./index.html"
+            ><img class="logo" src="assets/logojapanwhite.png" alt="Logo japan"
           /></a>
-          <h1>Tokyo Express</h1>
+          <input type="checkbox" name="" id="" />
+          <div class="hamburger-lines">
+            <span class="line line1"></span>
+            <span class="line line2"></span>
+            <span class="line line3"></span>
+          </div>
+          <ul class="menu-items">
+            <li>
+              <a href="index.html"><i class="fa-solid fa-house"></i>Accueil</a>
+            </li>
+            <li>
+              <a href="preparation.html"
+                ><i class="fa-solid fa-plane"></i>Préparation</a
+              >
+            </li>
+            <li>
+              <a href="listspage.html"
+                ><i class="fa-solid fa-map-location"></i>Adresses</a
+              >
+            </li>
+            <li>
+              <a href="aboutus.html"
+                ><i class="fa-solid fa-circle-info"></i>À propos</a
+              >
+            </li>
+          </ul>
         </div>
-        <ul>
-          <li>
-            <a href="./preparation.html" id="prepNav">Préparation au voyage</a>
-          </li>
-          <li><a href="./listspage.html" id="placesNav">Adresses</a></li>
-          <li><a href="./aboutus.html" id="aboutNav">A propos</a></li>
-        </ul>
-      </section>
+      </nav>
     </header>
-    <h1>Les bonnes adresses</h1>
     <main>
+      <h1>Les bonnes adresses</h1>
       <h2 id="placesTitle">Lieux à visiter<button id="arrow"></button></h2>
       <section id="places">
         <a href="./detailspage.html?id=1" class="places-box">
@@ -190,21 +202,29 @@
           <div id="mapInfo">
             <div class="map-items" id="map-places">
               <h5>Lieux à visiter</h5>
-              <p>Les jardins de Shinjuku</p>
-              <p>Sensõ-Ji</p>
-              <p>Tokyo Skytree</p>
+              <p id="shinjukuMap" class="map-list">Les jardins de Shinjuku</p>
+              <p id="sensoMap" class="map-list">Sensõ-Ji</p>
+              <p id="skytreeMap" class="map-list">Tokyo Skytree</p>
             </div>
             <div class="map-items" id="map-hostels">
               <h5>Hôtels</h5>
-              <p>Hotel Sunroute Plaza Shinjuku</p>
-              <p>The Royal Park Hotel Tokyo Haneda</p>
-              <p>The Tokyo Station Hotel</p>
+              <p id="sunrouteHotelMap" class="map-list">
+                Hotel Sunroute Plaza Shinjuku
+              </p>
+              <p id="royalHotelMap" class="map-list">
+                The Royal Park Hotel Tokyo Haneda
+              </p>
+              <p id="stationHotelMap" class="map-list">
+                The Tokyo Station Hotel
+              </p>
             </div>
             <div class="map-items" id="map-restaurants">
               <h5>Restaurants</h5>
-              <p>Sushizanmai Main Branch</p>
-              <p>Nabezo Shibuya Koen Dori</p>
-              <p>Gyukatsu Motomura Harajuku</p>
+              <p id="sushiMap" class="map-list">Sushizanmai Main Branch</p>
+              <p id="nabezoMap" class="map-list">Nabezo Shibuya Koen Dori</p>
+              <p id="gyukatsuMap" class="map-list">
+                Gyukatsu Motomura Harajuku
+              </p>
             </div>
           </div>
           <div id="map"></div>
@@ -269,10 +289,15 @@
       </div>
     </footer>
     <script
+      src="https://kit.fontawesome.com/4b82133d48.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
       src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
       integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
       crossorigin=""
     ></script>
+    <script src="./adresseslists.js"></script>
     <script src="./listspage.js"></script>
   </body>
 </html>
