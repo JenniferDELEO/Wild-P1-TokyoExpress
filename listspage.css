@@ -215,7 +215,7 @@ img:hover {
   .places-box,
   .hostel-box,
   .restaurant-box {
-    margin: 0 32px;
+    margin: 0 16px;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
