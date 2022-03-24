@@ -39,7 +39,7 @@ const message = "Bravo, tu es prêt pour l'aventure ! 🧳 ";
 for (let i = 0; i < todoList.length; i++) {
   todoList[i].addEventListener("click", function (event) {
     let allChecked = true;
-    /*for (let y = 0; y < todoList.length; y++) {
+    for (let y = 0; y < todoList.length; y++) {
       if (!todoList[y].checked) {
         allChecked = false;
       }
@@ -49,5 +49,3 @@ for (let i = 0; i < todoList.length; i++) {
     }
   });
 }
-
-
