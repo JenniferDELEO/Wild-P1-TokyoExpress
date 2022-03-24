@@ -10,8 +10,11 @@ h2 {
   padding: 8px;
   padding-left: 24px;
   margin: 24px auto;
-  cursor: pointer;
   text-transform: uppercase;
+}
+
+.displayTitle {
+  cursor: pointer;
 }
 
 #arrow {
@@ -25,6 +28,10 @@ h2 {
   float: inline-end;
   margin-top: 8px;
   margin-right: 8px;
+}
+
+.display {
+  display: none;
 }
 
 /*Lieux à visiter - Hôtels - Restaurants*/
@@ -203,8 +210,16 @@ img:hover {
   h2 {
     margin: 52px auto;
     width: 85%;
+  }
+
+  .displayTitle {
     cursor: default;
   }
+
+  .display {
+    display: initial;
+  }
+
   #places,
   #hostel,
   #restaurant {
