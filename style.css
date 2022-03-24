@@ -9,47 +9,6 @@
   src: url('assets/ChinChan.ttf') format('truetype');
 }
 
-.navlogo {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px;
-}
-
-#logoburger {
-  width: 60px;
-  height: 60px;
-  margin-right: 4%;
-}
-
-#logojapan {
-  width: 90px;
-  height: 90px;
-  margin-left: 4%;
-}
-
-.navlogo2 {
-  display: flex;
-  justify-content: flex-end;
-  padding: 15px;
-}
-
-#logoburger2 {
-  width: 15%;
-  height: 13%;
-  margin: 2%;
-}
-
-.menu {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 3.5rem;
-  padding-top: 20%;
-  padding-bottom: 20%;
-}
-
 h1 {
   font-family: 'chinchan';
   font-weight: bold;
@@ -70,11 +29,6 @@ body {
   color: #2c2c2e;
 }
 
-.corpstexte,
-.corpstexte2,
-.menuResto {
-  padding: 10px 10px;
-}
 
 footer {
   width: 100%;
@@ -164,54 +118,12 @@ footer {
   text-decoration: none;
 }
 
-.navlogo {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px;
-}
-
-#logoburger {
-  width: 60px;
-  height: 60px;
-  margin-right: 4%;
-}
-
-#logojapan {
-  width: 90px;
-  height: 90px;
-  margin-left: 4%;
-}
-
-.navlogo2 {
-  display: flex;
-  justify-content: flex-end;
-  padding: 15px;
-}
-
-#logoburger2 {
-  width: 15%;
-  height: 13%;
-  margin: 2%;
-}
-
-.menu {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-
-  font-size: 3.5rem;
-  padding-top: 20%;
-  padding-bottom: 20%;
-}
-
 .navdesktop {
   display: none;
 }
 
-@media screen and (min-width: 1000px) {
-  .navlogo {
+@media screen and (min-width: 1024px) {
+  .navbar {
     display: none;
   }
 
@@ -271,9 +183,7 @@ footer {
     margin-bottom: 24px;
     font-size: 2.6em;
   }
-}
 
-@media screen and (min-width: 1024px) {
   .categoriefooter {
     margin: 0;
     display: flex;

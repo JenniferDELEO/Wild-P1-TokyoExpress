@@ -18,6 +18,12 @@
   margin: 12px;
 }
 
+.corpstexte,
+.corpstexte2,
+.menuResto {
+  padding: 10px 10px;
+}
+
 #leavecom {
   padding: 0px 23px;
 }
