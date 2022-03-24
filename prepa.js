@@ -35,6 +35,7 @@ const todoList = document.querySelectorAll(".completed");
 console.log(todoList);
 
 for (let i = 0; i < todoList.length; i++) {
+  console.log("test");
   if (todoList[i].checked) {
     alert("Bravo, tu es prêt pour l'aventure ! 🧳 ");
   }
