@@ -13,14 +13,12 @@
   --secondary-color: #202020;
 }
 
-/* ............/navbar/............ */
-
-.logo {
-  position: absolute;
-  width: 60px;
-  right: 15px;
-  top: 6px;
+.dark-theme {
+  --primary-color: #202020;
+  --secondary-color: #edf2fc;
 }
+
+/* ............/navbar/............ */
 
 h1 {
   font-family: 'chinchan';
@@ -34,12 +32,12 @@ h1 {
 }
 
 body {
-  background-color: rgba(218, 226, 228, 0.25);
+  background-color: var(--primary-color);
   font-family: 'Cabin';
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  color: #2c2c2e;
+  color: var(--secondary-color);
 }
 
 /*-----------------------Footer----------------------*/
@@ -47,7 +45,7 @@ body {
 footer {
   width: 100%;
   background-color: #5f6b7c;
-  color: #ffffff;
+  color: #edf2fc;
   padding: 10px;
 }
 
@@ -122,13 +120,13 @@ footer {
 }
 
 .categoriefooter a:link {
-  color: #ffffff;
+  color: var(--primary-color);
   font-size: 1em;
   text-decoration: none;
 }
 
 .categoriefooter a:visited {
-  color: #ffffff;
+  color: var(--primary-color);
   font-size: 1em;
   text-decoration: none;
 }
@@ -248,7 +246,7 @@ footer {
   #prepNav,
   #placesNav,
   #aboutNav {
-    color: #ffffff;
+    color: #edf2fc;
     flex: 1;
     text-align: center;
     height: 72px;

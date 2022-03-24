@@ -145,6 +145,7 @@ nav ul {
 
 .main-title {
   text-transform: uppercase;
+  font-family: 'chinchan';
 }
 
 /* ......//tokyo//...... */
@@ -384,7 +385,7 @@ nav ul {
     z-index: 7;
     position: absolute;
     background: #7d191b;
-    height: 100vh;
+    height: 150vh;
     display: flex;
     flex-direction: column;
     margin-left: -80px;
@@ -392,7 +393,7 @@ nav ul {
     padding-right: 80px;
     transform: translate(-150%);
     transition: transform 0.5s ease-in-out;
-    box-shadow: 5px 0px 10px 0px #7d191b;
+    box-shadow: 2px 0px 5px 0px #111111;
   }
 
   .navbar .menu-items li {
