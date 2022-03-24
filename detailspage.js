@@ -32,15 +32,5 @@ contactFormEvent.addEventListener("submit", (event) => {
     textArea.value = "";
   });
 
-  
-  /*const newTextAreaCompleted = document.getElementById("textInput");
-  textAreaCompleted.addEventListener("click", (event) => {
-      textAreaCompleted.innerHTML = "Ton Commentaire";
-  }*/
-  
-  /*const textInput = document.getElementById("textInput");
-  textInput.addEventListener("input", (event) => {
-      console.log(textInput.value)
-  })*/
 
 
