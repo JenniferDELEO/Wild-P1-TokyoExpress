@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tokyo Express</title>
+    <link rel="icon" type="image/png" href="assets/logojapan.png" />
     <script src="https://kit.fontawesome.com/4b82133d48.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="stylebis.css" />
     <link rel="stylesheet" href="home.css" />
@@ -17,7 +18,7 @@
     <nav class="navbar">
         <div class="navbar-container container">
             <img class="logo" src="assets/logojapanwhite.png" alt="Logo japan" />
-            <input type="checkbox" name="" id="">
+            <input type="checkbox">
             <div class="hamburger-lines">
                 <span class="line line1"></span>
                 <span class="line line2"></span>
@@ -28,20 +29,23 @@
                 <li><a href="preparation.html"><i class="fa-solid fa-plane"></i>Préparation</a></li>
                 <li><a href="listspage.html"><i class="fa-solid fa-map-location"></i>Adresses</a></li>
                 <li><a href="aboutus.html"><i class="fa-solid fa-circle-info"></i>À propos</a></li>
+                <li><img src="assets/lunes.png" id="icon"></li>
             </ul>
-            <img src="assets/lunes.png" id="icon">
         </div>
     </nav>
 
     <main>
 
-        <section class="showcase-area" id="showcase">
-            <div class="showcase-container">
-                <h1 class="main-title h1size">TOKYO EXPRESS</h1>
-                <p>A trip to the land of the rising sun</p>
-                <a href="preparation.html" class="btn btn-primary">Préparation</a>
-            </div>
-        </section>
+        <div class="containerfuji"><img class="thumbnail" src="assets/photo-accueil.jpeg" alt="image mont fuji">
+            <section class="showcase-area">
+                <div class="showcase-container">
+                    <h1 class="main-title h1size">TOKYO EXPRESS</h1>
+                    <a href="preparation.html" class="btn btn-primary">Préparation</a>
+                </div>
+            </section>
+        </div>
+
+
 
 
         <section id="tokyo">
@@ -142,6 +146,7 @@
         </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.5.1/dist/simpleParallax.min.js"></script>
     <script src="homepage.js"></script>
 </body>
 

@@ -7,3 +7,9 @@ icon.onclick = function () {
     icon.src = 'assets/lunes.png';
   }
 };
+
+const image = document.querySelector('.thumbnail');
+new simpleParallax(image, {
+  delay: 0.8,
+  transition: 'cubic-bezier(0,0,0,1)',
+});

@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 *,
 *::after,
@@ -65,7 +65,7 @@ input {
 .navbar {
   background-color: #7d191b;
   box-shadow: 0px 5px 10px 0px rgb(14, 14, 14);
-  z-index: 1;
+  z-index: 6;
 }
 
 .navbar-container {
@@ -99,9 +99,10 @@ i {
 }
 
 #icon {
-  width: 25px;
+  width: 30px;
   cursor: pointer;
-  color: var(--primary-color);
+  position: relative;
+  top: 8px;
 }
 
 nav ul {
@@ -111,16 +112,26 @@ nav ul {
 
 /* ............//// Showcase ////......... */
 
+.containerfuji {
+  position: relative;
+  overflow: hidden;
+  max-height: 100vh;
+}
+
+.thumbnail {
+  width: 100%;
+  border-radius: 10px;
+}
+
 .showcase-area {
-  height: 50vh;
-  background: linear-gradient(
-      rgba(133, 133, 133, 0.144),
-      rgba(255, 255, 255, 0.336)
-    ),
-    url(assets/photo-accueil.jpeg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  position: absolute;
+  z-index: 5;
+  top: 0%;
+  left: 0%;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
 }
 
 .showcase-container {
@@ -130,12 +141,6 @@ nav ul {
   justify-content: center;
   height: 100%;
   font-size: 1.6rem;
-}
-
-.imgcenter {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .main-title {
@@ -257,7 +262,7 @@ nav ul {
   border-radius: 20px;
   transform: translate(-50%, -50%);
   opacity: 0;
-  z-index: 2;
+  z-index: 4;
   text-align: center;
   transition: all 0.3s ease-in-out 0.1s;
 }
@@ -272,7 +277,7 @@ nav ul {
 }
 
 .img-container::after {
-  content: "";
+  content: '';
   display: block;
   position: absolute;
   border-radius: 20px;
@@ -309,14 +314,15 @@ nav ul {
   }
 
   #icon {
-    display: none;
+    padding-left: 10px;
+    width: 40px;
   }
 
   .navbar {
     opacity: 1;
   }
 
-  .navbar-container input[type="checkbox"],
+  .navbar-container input[type='checkbox'],
   .navbar-container .hamburger-lines {
     display: block;
   }
@@ -327,13 +333,13 @@ nav ul {
     height: 64px;
   }
 
-  .navbar-container input[type="checkbox"] {
+  .navbar-container input[type='checkbox'] {
     position: absolute;
     display: block;
     height: 40px;
     width: 40px;
     top: 16px;
-    z-index: 5;
+    z-index: 3;
     opacity: 0;
     cursor: pointer;
   }
@@ -374,20 +380,24 @@ nav ul {
 
   .navbar .menu-items {
     padding-top: 100px;
+    top: 60px;
+    z-index: 7;
+    position: absolute;
     background: #7d191b;
-    height: 57vh;
-    max-width: 400px;
-    transform: translate(-150%);
+    height: 100vh;
     display: flex;
     flex-direction: column;
     margin-left: -80px;
     padding-left: 50px;
+    padding-right: 80px;
+    transform: translate(-150%);
     transition: transform 0.5s ease-in-out;
     box-shadow: 5px 0px 10px 0px #7d191b;
   }
 
   .navbar .menu-items li {
     margin-bottom: 1.5rem;
+    margin-right: px;
     font-size: 1.3rem;
     font-weight: 500;
   }
@@ -396,19 +406,19 @@ nav ul {
     text-align: left;
   }
 
-  .navbar-container input[type="checkbox"]:checked ~ .menu-items {
+  .navbar-container input[type='checkbox']:checked ~ .menu-items {
     transform: translateX(0);
   }
 
-  .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
+  .navbar-container input[type='checkbox']:checked ~ .hamburger-lines .line1 {
     transform: rotate(35deg);
   }
 
-  .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line2 {
+  .navbar-container input[type='checkbox']:checked ~ .hamburger-lines .line2 {
     transform: scaleY(0);
   }
 
-  .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
+  .navbar-container input[type='checkbox']:checked ~ .hamburger-lines .line3 {
     transform: rotate(-35deg);
   }
 
@@ -451,7 +461,7 @@ nav ul {
 
   .activity-item {
     flex-direction: column;
-    z-index: -99999;
+    z-index: -1;
     text-align: center;
   }
 
