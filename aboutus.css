@@ -61,8 +61,16 @@ main textarea {
 }
 
 .display {
-  display: none;
+  display: none; 
 }
+
+.dynamicMessageSentSection{
+  text-align: center;
+}
+.dynamicMessageSentSection p {
+  margin-top:1rem;
+}
+
 
 #cardsContainer {
   display: flex;

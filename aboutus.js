@@ -7,9 +7,9 @@ function sendMessage(event) {
   const message = document.querySelector("#message");
   document.querySelector("#contact-form").style.display = "none";
   divToFill.innerHTML = `
-    <h3>Message envoyé</h3>
-    <p>Merci ${name.value} 😜.<br>L'équipe de Tokyo Express a bien reçu ton message :<br>
-    "${message.value}".<br>
+    <h3>Message envoyé !</h3>
+    <p>Merci ${name.value} 😜<br>L'équipe de Tokyo Express a bien reçu ton message :<br>
+    "${message.value}"<br><br>
     Nous te répondrons dès que possible !</p>`;
   divToFill.classList.remove("display");
 }
