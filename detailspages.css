@@ -18,6 +18,12 @@
   margin: 12px;
 }
 
+.corpstexte,
+.corpstexte2,
+.menuResto {
+  padding: 10px 10px;
+}
+
 #leavecom {
   padding: 0px 23px;
 }
@@ -32,7 +38,7 @@ textarea {
 .fa-star {
   color: gray;
   cursor: pointer;
-  padding: 0.0625rem;
+
 }
 .fa-star.gold {
   color: #ffdc0f;
@@ -43,6 +49,7 @@ textarea {
   flex-direction: column;
   align-items: center;
   font-size: 50%;
+  padding: 20px;
 }
 .stars {
   display: inline-flex;
@@ -57,19 +64,37 @@ textarea {
   color: gray;
 }
 
+.rating {
+  margin-bottom: 15px;
+}
 
-@media screen and (min-width: 768px) {
+#sendButton {
+ background-color: #7d191b;
+ border-radius: 15px;
+ padding: 20px;
+ color: #ffff;
+ margin: 20px;
+ width: 5 px;
+ cursor: pointer;
+}
+
+#sendButton:hover {
+  background-color :#ffff;
+  color :#7d191b;
+}
+
+textarea {
+  padding: 10px;
+}
+
+@media screen and (min-width: 1024px) {
 
 .corpstexte, .corpstexte2, .menuResto {
   font-size: 125%;
   text-align: justify;
 }
 
-
-}
-
-@media screen and (min-width: 768px) {
-  h1 { 
+h1 { 
       font-size: 300%;
       width: 100%;
       padding: 0 auto;
@@ -80,7 +105,7 @@ body {
 }
 
 .main {
-  width: 70%;
+  width: 60%;
   margin: 0 auto;
 }
 
