@@ -8,9 +8,11 @@ function sendMessage(event) {
     document.querySelector('#contact-form').style.display = 'none';
     divToFill.innerHTML = `
     <h3>Message envoyé</h3>
-    <p>Merci ${name.value} 😜, l'équipe de Tokyo Express a bien reçu ton message :<br>
-    "${message.value}".
+    <p>Merci ${name.value} 😜.<br>L'équipe de Tokyo Express a bien reçu ton message :<br>
+    "${message.value}".<br>
     Nous te répondrons dès que possible !</p>`
+    divToFill.classList.remove("display");
+
   }
 
 contactFormInJS.addEventListener('submit', sendMessage)
