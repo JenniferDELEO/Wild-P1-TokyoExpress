@@ -31,15 +31,21 @@ inputValue.addEventListener("input", (e) => {
 
 currentRate.innerText = rate;
 
-const todoList = document.querySelector(".todo-container");
-const checkedBox = 0;
+/* ------------------ TO DO LIST --------------------------- */
+
+const todoList = document.querySelectorAll(".completed");
+const message = "Bravo, tu es prêt pour l'aventure ! 🧳 ";
+
 for (let i = 0; i < todoList.length; i++) {
-  if (todoList[i].type == "checkbox") {
-    if (todoList[i].checked === true) {
-      checkedBox++;
+  todoList[i].addEventListener("click", function (event) {
+    let allChecked = true;
+    for (let y = 0; y < todoList.length; y++) {
+      if (!todoList[y].checked) {
+        allChecked = false;
+      }
     }
-  }
-  if (todoList >= 4) {
-    alert("Bravo, tu es prêt pour l'aventure ! 🧳 ");
-  }
+    if (allChecked) {
+      alert(message);
+    }
+  });
 }
