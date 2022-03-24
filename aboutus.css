@@ -1,71 +1,64 @@
 h2 {
-  width: 95%;
-  background-color: #7d191b;
-  border: solid 1px #7d191b;
-  font-size: large;
-  color: #ffffff;
-  border-radius: 5px;
-  padding: 8px;
-  padding-left: 24px;
-  margin: 24px auto;
-  text-transform: uppercase;
+    width: 95%;
+    background-color: #7d191b;
+    border: solid 1px #7d191b;
+    font-size: large;
+    color: #ffffff;
+    border-radius: 5px;
+    padding: 8px;
+    padding-left: 24px;
+    margin: 24px auto;
+    text-transform: uppercase;
+    max-width: 900px;
 }
 
-a {
-  text-decoration: none;
+a{
+    text-decoration: none;
+}
+
+.contentInGreyBox{
+    border-radius: 10px;
+    background-color: rgba(169, 195, 214, 0.3);
+    padding: 1rem;
+    margin : 1rem;
+    max-width: 900px;
 }
 
 #aboutUsIntro{
-    border-radius: 10px;
-    background-color: rgba(169, 195, 214, 0.3);
-    padding:1rem;
-    margin:1rem;
     text-align: justify;
 }
 
-#contactFormAboutus{
-    border-radius: 10px;
-    background-color: rgba(169, 195, 214, 0.3);
-    padding:1rem;
-    margin:1rem;
-}
-
-textArea{
-    width:50%;
-    margin-left:25%; 
-}
-
-#submitButton{
-    cursor: pointer;
-}
-
-input{
+main input{
+    opacity: initial;
+    margin-top: 0.5rem;
     margin-bottom: 1rem;
 }
 
-#aboutUsCardsContainer{
-    display: flex;
-    flex-direction: column ;
-    width: 50vw;
-    margin-left: 25vw;   
+textarea{
+    width:100%;
+    margin-top: 0.5rem;
+    max-width: 700px;
+    /* A FAIRE : max-width desktop mais gardé centré*/
+    /*  margin : auto; */
 }
 
-.cardsContainer{
-    width: 94vw;
-    margin-left: 3vw;
+#submitButton{
+    /* A FAIRE : max-width desktop mais gardé centré*/
+    /* max-width: 300px; */
+    cursor: pointer;
+    width:100%;
+}
+
+#cardsContainer{
     display: flex;
-    justify-content: space-between;
+    flex-direction: column ;
     align-items: center;
-    /* margin-right: 3%; */
-    /* min-width:670px; */
-    /* height: 350px; */
 }
 
 .card{
     position: relative;
     width:150px;
     height: 168px;
-    margin: 10px;
 }
 
 .polaroidFrame{
@@ -88,21 +81,6 @@ input{
     margin-left:55px;
 }
 
-/*
-.cardFlex
-{
-    width:17vw;
-    height: 350px;
-    width: 100%;
-}
-
-.inCardFlex{
-    width:100%;
-}
-*/
-
-
-
 
 @media screen and (min-width:1024px) {
 
@@ -110,16 +88,23 @@ input{
         margin: 0 auto;
     }
 
-    #aboutUsCardsContainer{
+    #cardsContainer{
         flex-direction: row;
         justify-content: space-between;
         width: 94vw;
-        margin-left: 3vw;
-      }
+        max-width: 900px;
+    }
 
-       h2 {
-    margin: 52px auto;
-    width: 85%;
-    cursor: default;
-  }
+    h2 {
+        margin: 52px auto;
+        width: 85%;
+        cursor: default;
+    }
+
+    .contentInGreyBox{
+        width: 85%;
+        margin: 52px auto;
+        padding :25px;
+    }
+
 }
