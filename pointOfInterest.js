@@ -6,7 +6,7 @@ const pointOfInterestList = [
         quelques minutes du bouillonnant quartier de la gare de Shinjuku. Au
         printemps, le parc devient une véritable attraction lors de la floraison
         de près de 2000 cerisiers.`,
-    image: "assets/Lieu 1.jpeg",
+    image: "assets/Lieu_1.jpeg",
     title: `Jardin impérial de Shinjuku`,
     id: 1,
   },
@@ -17,7 +17,7 @@ const pointOfInterestList = [
         le plus vieux temple de la capitale japonaise. Il est dédié à la déesse
         bodhisattva Kannon. Anciennement associé à la secte Tendai, il est devenu
         indépendant après la Seconde Guerre mondiale.`,
-    image: "assets/Photo senso ji.jpg",
+    image: "assets/Photo_senso_ji.jpg",
     title: `Temple de Senso-ji`,
     id: 2,
   },
@@ -28,7 +28,7 @@ const pointOfInterestList = [
         autoportante du monde. Initialement prévue pour mesurer 610 mètres, la
         Tokyo Skytree culmine finalement à 634 mètres4, soit près du double de la
         Tour de Tokyo`,
-    image: "assets/Photo la tour Skytree.jpg",
+    image: "assets/Photo_la_tour_Skytree.jpg",
     title: `Tokyo Skytree`,
     id: 3,
   },
@@ -47,7 +47,7 @@ const pointOfInterestList = [
         qu'une cuisine italienne pour le déjeuner et le dîner. Vous aurez
         également la possibilité de prendre un verre ou un repas léger dans
         l'élégant bar Ku Kon.`,
-    image: "assets/Photo hotel 1.jpg",
+    image: "assets/Photo_hotel_1.jpg",
     title: `Hotel Sunroute Plaza Shinjuku`,
     id: 4,
   },
@@ -64,7 +64,7 @@ const pointOfInterestList = [
         Limited Express et à 13 minutes du quartier d'Hamamatsuchō par le Tokyo
         Monorail Haneda Express. Pour vous rendre à Shibuya, vous pourrez prendre
         la ligne Keikyū jusqu'à Shinagawa, puis emprunter la ligne JR.`,
-    image: "assets/Photo hotel 2.jpeg",
+    image: "assets/Photo_hotel_2.jpeg",
     title: `The Royal Park Hotel Tokyo Haneda`,
     id: 5,
   },
@@ -82,7 +82,7 @@ const pointOfInterestList = [
         trouvent à environ 10 minutes de route. L’aéroport international de Tokyo
         Haneda est accessible en 30 minutes en monorail et l’aéroport
         international de Narita en 1 heure en train express.`,
-    image: "assets/Photo hotel 3.jpeg",
+    image: "assets/Photo_hotel_3.jpeg",
     title: `The Tokyo Station Hotel`,
     id: 6,
   },
@@ -95,7 +95,7 @@ const pointOfInterestList = [
         Excellent rapport qualité-prix<br/>
         Mention spéciale pour les sushis au thon +++<br/>
         Meilleurs sushis que j’ai mangé jusqu’à présent.`,
-    image: "assets/Photo Restaurant 1.jpg",
+    image: "assets/Photo_Restaurant_1.jpg",
     title: `Restaurant Sushizanmai Main Branch`,
     id: 7,
   },
@@ -109,7 +109,7 @@ const pointOfInterestList = [
         Endroit raffiné et sympathique pour goûter du shabu shabu à volonté
         (viande aussi). Bien indiqué depuis l'extérieur. Le personnel parle
         anglais.`,
-    image: "assets/Photo Restaurant 2.jpg",
+    image: "assets/Photo_Restaurant_2.jpg",
     title: `Restaurant de Sukiyaki et Shabu-Shabu`,
     id: 8,
   },
@@ -122,7 +122,7 @@ const pointOfInterestList = [
     Fantastique. Délicieux. Incroyable. Si vous êtes n'importe où près de cet
     endroit, vous DEVEZ l'essayer! Super sympa, nourriture incroyable, bonne
     ambiance.`,
-    image: "assets/Photo Restaurant 3.jpg",
+    image: "assets/Photo_Restaurant_3.jpg",
     title: `Restaurant Gyukatsu Motomura Harajuku`,
     id: 9,
   },
