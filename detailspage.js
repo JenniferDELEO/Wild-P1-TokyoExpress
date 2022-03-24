@@ -20,45 +20,27 @@ photoElement.src = poiObject.image;
 
 
 const message =
-"Merci pour votre commentaire !";
+"Merci pour ton commentaire !";
 
 
 const contactFormEvent = document.getElementById("contactForm");
+
 contactFormEvent.addEventListener("submit", (event) => {
     event.preventDefault();
     alert(message);
+    const textArea = document.getElementById("textInput");
+    textArea.value = "";
   });
 
-  const textInput = document.getElementById("textInput");
+  
+  /*const newTextAreaCompleted = document.getElementById("textInput");
+  textAreaCompleted.addEventListener("click", (event) => {
+      textAreaCompleted.innerHTML = "Ton Commentaire";
+  }*/
+  
+  /*const textInput = document.getElementById("textInput");
   textInput.addEventListener("input", (event) => {
       console.log(textInput.value)
-  })
+  })*/
 
-  /*
-const defautComment = [
-    {id: 1, content: 'test comment 1'},
-]
-const savedComment = JSON.parse(localStorage.getItem('commentList'));
 
-let commentList;
-if (savedComment) {
-  commentList = savedComment;
-} else {
-  commentList = defaultComment;
-}
-
-console.log('list', commentList)
-
-let lastId = commentList[commentList.length - 1].id;
-
-function createComment(content) {
-  const newComment = {
-    content: content,
-    id: ++lastId,
-  };
-  commentList.push(newComment);
-  localStorage.setItem('commentList', JSON.stringify(commentList));
-  return newComment
-}
-
-  */
