@@ -34,7 +34,6 @@
   outline: none;
   margin-top: 1em;
   text-transform: uppercase;
-  font-weight: small;
 }
 
 .btn-primary {
@@ -153,7 +152,6 @@ nav ul {
 #tokyo {
   padding: 50px 0;
   background: var(--primary-color);
-  box-shadow: #edf2fc;
 }
 
 .tokyo-wrapper {
@@ -398,7 +396,6 @@ nav ul {
 
   .navbar .menu-items li {
     margin-bottom: 1.5rem;
-    margin-right: px;
     font-size: 1.3rem;
     font-weight: 500;
   }

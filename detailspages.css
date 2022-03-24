@@ -74,7 +74,7 @@ textarea {
  padding: 20px;
  color: #ffff;
  margin: 20px;
- width: 5 px;
+ width: 5px;
  cursor: pointer;
 }
 
@@ -97,7 +97,7 @@ textarea {
 h1 { 
       font-size: 300%;
       width: 100%;
-      padding: 0 auto;
+      padding: 0;
   }
 
 body {
