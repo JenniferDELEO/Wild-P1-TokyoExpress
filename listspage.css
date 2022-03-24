@@ -41,11 +41,11 @@ h3 {
   text-align: center;
   margin-bottom: 16px;
   margin-top: 20px;
-  color: #2c2c2e;
+  color: var(--secondary-color);
 }
 
 h3:visited {
-  color: #2c2c2e;
+  color: var(--secondary-color);
 }
 
 #garden-photo,
@@ -66,7 +66,7 @@ main a {
 
 main a:visited {
   text-decoration: none;
-  color: #2c2c2e;
+  color: var(--secondary-color);
 }
 
 .hostel-box,
@@ -104,7 +104,7 @@ main a:visited {
 .restaurant a:link {
   font-size: 0.9em;
   padding-left: 5px;
-  color: #2c2c2e;
+  color: var(--secondary-color);
   font-weight: bold;
 }
 
@@ -112,20 +112,20 @@ main a:visited {
 .hostel-text,
 .restaurant-text {
   text-decoration: none;
-  color: #2c2c2e;
+  color: var(--secondary-color);
 }
 
 .places-box p:visited,
 .hostel-text:visited,
 .restaurant-text:visited {
   text-decoration: none;
-  color: #2c2c2e;
+  color: var(--secondary-color);
 }
 
 .restaurant a:visited {
   font-size: 0.9em;
   padding-left: 5px;
-  color: #2c2c2e;
+  color: var(--secondary-color);
   font-weight: bold;
 }
 
