@@ -101,7 +101,7 @@ main textarea {
   position: absolute;
   margin-top: 140px;
   margin-left: 55px;
-  color: var(--secondary-color);
+  color: #202020 ;
 }
 
 @media screen and (min-width: 1024px) {
