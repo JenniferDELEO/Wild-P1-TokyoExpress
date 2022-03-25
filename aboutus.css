@@ -61,16 +61,15 @@ main textarea {
 }
 
 .display {
-  display: none; 
+  display: none;
 }
 
-.dynamicMessageSentSection{
+.dynamicMessageSentSection {
   text-align: center;
 }
 .dynamicMessageSentSection p {
-  margin-top:1rem;
+  margin-top: 1rem;
 }
-
 
 #cardsContainer {
   display: flex;
@@ -102,6 +101,7 @@ main textarea {
   position: absolute;
   margin-top: 140px;
   margin-left: 55px;
+  color: #202020 ;
 }
 
 @media screen and (min-width: 1024px) {
